@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/main.css" />
+  <link rel="stylesheet" href="./css/jquery.fullPage.css" />
+
+  <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+  <script src="./js/jquery.fullPage.js"></script>
+  <script src="./js/jquery.fullpage.extensions.min.js"></script>
+
+  <title>ESG GLOBAL VINA</title>
+</head>
+<body>
+  <div id="fullpage">
+
+    <div class="section first">
+      <div id="header">
+        <div class="header_wrap">
+
+          <div id="logo">
+            <a href="/">
+              <img src="./img/logo.png" alt="">
+            </a>
+          </div>
+
+          <nav>
+            <div class="nav_list play_bold">
+              <a href="">MAIN</a>
+            </div>
+            <div class="nav_list play_bold">
+              <a href="">COMPANY</a>
+            </div>
+            <div class="nav_list play_bold">
+              <a href="">BUSINESS</a>
+            </div>
+            <div class="nav_list play_bold">
+              <a href="">KENAF</a>
+            </div>
+            <div class="nav_list play_bold">
+              <a href="">CONTACT</a>
+            </div>
+            <div class="nav_list play_bold">
+              <a class="language" href="">KOR
+                <img src="./img/vector.png" alt="">
+              </a>
+            </div>
+          </nav>
+        </div>
+      </div>
+      
+      <div class="firstpage wrap">
+        <h1 class="firstpage top_title">탄소중립 실천으로</h1>
+        <h1 class="firstpage middle_title">기후위기 극복에 앞장서는 기업</h1>
+        <h1 class="firstpage bottom_title play_bold">ESG GLOBAL VINA</h1>
+      </div>
+    </div>
+
+    <div class="section second">section2</div>
+    <div class="section third">section3</div>
+    <div class="section fourth">section4</div>
+  </div>
+</body>
+
+<script>
+  $(document).ready(function() {
+    $('#fullpage').fullpage({
+      autoScrolling: true,
+      scrollHorizontally: true
+    })
+  })
+</script>
+
+</html>

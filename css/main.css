@@ -1,0 +1,230 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+  font-family: 'Noto Sans KR';
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+@font-face {
+  font-family: 'Play-regular';
+  src: url("../font/play/Play-Regular.ttf");
+}
+
+@font-face {
+  font-family: 'Play-bold';
+  src: url("../font/play/Play-Bold.ttf");
+}
+
+.play_regular {
+  font-family: 'Play-regular';
+}
+
+.play_bold {
+  font-family: 'Play-bold';
+}
+
+#header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  max-width: 1600px;
+  height: 86px;
+}
+
+#header .header_wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: inherit;
+}
+
+#header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 932px;
+  width: 100%;
+}
+
+.nav_list a {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 10px;
+}
+
+.language {
+  display: flex;
+  align-items: center;
+}
+
+.language img {
+  margin-left: 8px;
+}
+
+
+/* 1페이지 시작 */
+
+.section.first {
+  background: url("../img/01_background.png");
+  background-size: 100% 100%;
+}
+
+.firstpage.wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  flex-direction: column;
+}
+
+.firstpage.top_title {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 54px;
+}
+
+.firstpage.middle_title {
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 54px;
+}
+
+.firstpage.bottom_title {
+  font-size: 66px;
+  font-weight: 700;
+  line-height: 69.42px;
+}
+
+/* 1페이지 끝 */
