@@ -102,8 +102,27 @@ section {
   display: block;
 }
 
+@font-face {
+  font-family: 'Noto Sans KR';
+  src: url("../font/notosanskr/NotoSansKR-Regular.ttf");
+}
+
+@font-face {
+  font-family: 'Play-regular';
+  src: url("../font/play/Play-Regular.ttf");
+}
+
+@font-face {
+  font-family: 'Play-bold';
+  src: url("../font/play/Play-Bold.ttf");
+}
+
+@font-face {
+  font-family: 'Roboto-bold';
+  src: url("../font/roboto/Roboto-Bold.ttf");
+}
+
 body {
-  line-height: 1;
   font-family: 'Noto Sans KR';
 }
 
@@ -134,14 +153,8 @@ a {
   text-decoration: none;
 }
 
-@font-face {
-  font-family: 'Play-regular';
-  src: url("../font/play/Play-Regular.ttf");
-}
-
-@font-face {
-  font-family: 'Play-bold';
-  src: url("../font/play/Play-Bold.ttf");
+strong {
+  font-weight: 700;
 }
 
 .play_regular {
@@ -150,6 +163,11 @@ a {
 
 .play_bold {
   font-family: 'Play-bold';
+}
+
+.roboto_bold {
+  font-family: 'Roboto-bold';
+  font-weight: 600;
 }
 
 #header {
@@ -193,15 +211,14 @@ a {
   margin-left: 8px;
 }
 
+/* main 시작 */
 
-/* 1페이지 시작 */
-
-.section.first {
+.section.main {
   background: url("../img/01_background.png");
   background-size: 100% 100%;
 }
 
-.firstpage.wrap {
+.main.wrap {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -209,22 +226,479 @@ a {
   flex-direction: column;
 }
 
-.firstpage.top_title {
+.main.bottom_wrap {
+  position: absolute;
+  top: calc(100% - 120px);
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.main.bottom_wrap img {
+  cursor: pointer;
+}
+
+.main.top_title {
   font-size: 40px;
   font-weight: 700;
   line-height: 54px;
 }
 
-.firstpage.middle_title {
+.main.middle_title {
   font-size: 40px;
   font-weight: 400;
   line-height: 54px;
 }
 
-.firstpage.bottom_title {
+.main.bottom_title {
   font-size: 66px;
   font-weight: 700;
   line-height: 69.42px;
 }
 
-/* 1페이지 끝 */
+/* main 끝 */
+
+/* company 시작 */
+
+.section.company {
+  background: url("../img/company_background.png");
+  background-size: 100% 100%;
+}
+
+.company.wrap {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1520px;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.company.image {
+  background: url("../img/02_1img.png");
+  width: 512px;
+  height: 512px;
+}
+
+.company.top_title {
+  font-size: 26px;
+  color: #fff;
+  line-height: 30px;
+  margin-bottom: 14px;
+}
+
+.company.middle_title {
+  font-size: 60px;
+  color: #fff;
+  line-height: 50px;
+  margin-bottom: 40px;
+}
+
+.company.bottom_title {
+  font-size: 18px;
+  color: #fff;
+  line-height: 30px;
+  margin-bottom: 20px;
+  letter-spacing: -0.02em;
+}
+
+/* company 끝 */
+
+/* business 시작 */
+.business.wrap {
+  display: flex;
+  height: 100%;
+}
+
+.business.image {
+  flex: 1;
+  background-size: 100% 100%;
+}
+
+.business.content {
+  flex: 1;
+}
+
+.business.inner {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  height: 100%;
+  justify-content: center;
+  max-width: 600px;
+}
+
+.business.top_title {
+  font-size: 26px;
+  color: #359750;
+  margin-bottom: 14px;
+  line-height: 30px;
+}
+
+.business.middle_title {
+  font-size: 34px;
+  color: #000;
+  margin-bottom: 40px;
+  line-height: 30px;
+}
+
+.business.bottom_title {
+  font-size: 18px;
+  line-height: 30px;
+  letter-spacing: -0.02em;
+  margin-bottom: 40px;
+}
+
+.business_swiper {
+  display: flex;
+}
+
+.business_swiper .swiper_items {
+  display: flex;
+  flex-direction: column-reverse;
+  margin-right: 24px;
+  cursor: pointer;
+  width: 164px;
+  height: 110px;
+}
+
+.business_swiper .swiper_items span {
+  position: absolute;
+  color: rgba(255, 255, 255, 1);
+  font-size: 14px;
+  padding: 14px;
+}
+
+.business_swiper .swiper_items.active {
+  border: 2px solid #FFD439;
+  border-radius: 5px;
+}
+
+#fp-nav {
+  display: none;
+  background-color: #F5F5F5;
+  height: 100%;
+  right: 0 !important;
+  top: 0 !important;
+  margin-top: 0px !important;
+  width: 6px;
+}
+
+#fp-nav ul li,
+.fp-slidesNav ul li {
+  width: 0px;
+  height: 0px;
+  margin: 0;
+}
+
+#fp-nav ul li a.active span,
+.fp-slidesNav ul li a.active span,
+#fp-nav ul li:hover a.active span,
+.fp-slidesNav ul li:hover a.active span {
+  /* height: 14px;
+  width: 12px;
+  margin: -6px 0 0 -6px;
+  border-radius: 100%; */
+  height: 0;
+  width: 0;
+  margin: 0;
+}
+
+#fp-nav ul li a span,
+.fp-slidesNav ul li a span {
+  display: none;
+}
+
+#fp-nav ul li:nth-child(3):has(a.active) {
+  width: 6px;
+  height: 300px;
+  background-color: #BDBDBD;
+  transition: 0.5s ease;
+}
+
+#fp-nav ul li:nth-child(4):has(a.active) {
+  position: absolute;
+  top: 33%;
+  width: 6px;
+  height: 300px;
+  background-color: #BDBDBD;
+  transition: 0.5s ease;
+}
+
+#fp-nav ul li:nth-child(5):has(a.active) {
+  position: absolute;
+  top: 66%;
+  width: 6px;
+  height: 300px;
+  background-color: #BDBDBD;
+  transition: 0.5s ease;
+}
+
+/* business 끝 */
+
+/* Place 시작 */
+
+.section.place {
+  background: url("../img/place_background.png");
+  background-size: 100% 100%;
+}
+
+.place.wrap {
+  display: flex;
+  align-items: center;
+  margin-left: 162px;
+}
+
+.place.wrap .place_title {
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  flex: 0.8 1;
+
+}
+
+.place.wrap .main {
+  font-size: 60px;
+  line-height: 69.42px;
+}
+
+.place.wrap .main:last-of-type {
+  margin-bottom: 24px
+}
+
+.place.wrap .sub {
+  font-size: 26px;
+  line-height: 30px;
+}
+
+.swiper-container {
+  width: 100%;
+  height: 100%;
+  flex: 3 1;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 600px;
+}
+
+.swiper-slide .place_name {
+  width: 100%;
+  background: #000;
+  color: #fff;
+  padding: 18px 2px;
+}
+
+.swiper-slide .place_name p {
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 600px;
+  height: 454px;
+  object-fit: cover;
+}
+
+.scrollbar {
+  margin-top: 20px;
+  position: relative;
+  height: 10px;
+  width: 90%;
+}
+
+.scrollbar ul {
+  display: flex;
+  height: 1px;
+  background: #CECECE;
+}
+
+.scrollbar ul .scroll {
+  position: absolute;
+  top: -4px;
+  background: #3EA053;
+  border-radius: 5px;
+  height: 10px;
+  width: 25%;
+  transition: 0.1s ease;
+}
+
+/* KENAF 시작 */
+.kenaf.wrap {
+  display: flex;
+  height: 100%;
+}
+
+.kenaf.col-4 {
+  flex: 33.333%;
+}
+
+.kenaf.boxs {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 0px 60px;
+}
+
+.kenaf.boxs .logo {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 34px;
+}
+
+.kenaf.boxs .title {
+  font-size: 34px;
+  font-weight: 700;
+  line-height: 30px;
+  color: #fff;
+}
+
+.kenaf.boxs .contents {
+  color: #fff;
+  font-size: 18px;
+  line-height: 30px;
+  letter-spacing: -0.02em;
+  text-align: center;
+  margin: 34px 0px;
+}
+
+/* KENAF 끝 */
+
+/* Connect 시작 */
+
+.connect.wrap {
+  display: flex;
+  height: 100%;
+}
+
+.connect_us {
+  display: flex;
+  flex: 1;
+  background: url("../img/6_background.png");
+  background-size: 100% 100%;
+  align-items: center;
+}
+
+.connect_us .wrap {
+  margin-left: 162px;
+  min-width: 560px;
+}
+
+.connect_us .main_title {
+  font-size: 34px;
+  line-height: 30px;
+  color: #fff;
+  margin-bottom: 12px;
+}
+
+.connect_us .sub_title {
+  font-size: 16px;
+  line-height: 30px;
+  color: #fff;
+  margin-bottom: 40px;
+}
+
+.connect_us input[type=text] {
+  display: block;
+  background: inherit;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  padding: 20px 14px;
+  outline: none;
+  color: #fff;
+  font-size: 16px;
+  margin-bottom: 12px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.connect_us .contents {
+  height: 138px;
+  background: inherit;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  width: 100%;
+  padding: 14px;
+  outline: none;
+  color: #fff;
+  font-size: 16px;
+  margin-bottom: 12px;
+  font-family: 'Noto Sans KR';
+  resize: none;
+  box-sizing: border-box;
+}
+
+.connect_us .wrap input::placeholder {
+  font-size: 16px;
+  color: #fff;
+}
+
+.connect_us .contents::placeholder {
+  font-family: 'Noto Sans KR';
+  color: #fff;
+  font-size: 16px;
+}
+
+.connect_us .agree_zone {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.connect_us .agree_zone input[type=checkbox] {
+  width: 22px;
+  height: 22px;
+  margin: 0;
+  background: #359750;
+  border: 1px solid #fff;
+  margin-right: 6px;
+}
+
+.connect_us .agree_zone .agree_text {
+  color: #fff;
+  font-size: 14px;
+}
+
+.connect_us .agree_zone .agree_bar {
+  color: #fff;
+  margin: 0px 8px;
+}
+
+.connect_us .connect_submit {
+  width: 100%;
+  border-radius: 5px;
+  padding: 20px;
+  font-size: 16px;
+  color: #39AF65;
+  cursor: pointer;
+  background: #fff;
+  border: none;
+  font-family: 'Noto Sans KR';
+}
+
+.connect_map {
+  flex: 1;
+}
+
+.up_button {
+  position: absolute;
+  bottom: 80px;
+  right: 80px;
+  background-image: url('../img/up_button.png');
+  width: 60px;
+  height: 60px;
+  z-index: 99999;
+}
+
+
+
+/* Connect 끝 */
