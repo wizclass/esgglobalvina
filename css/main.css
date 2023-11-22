@@ -573,14 +573,14 @@ strong {
 
 /* KENAF 끝 */
 
-/* Connect 시작 */
+/* contact 시작 */
 
-.connect.wrap {
+.contact.wrap {
   display: flex;
   height: 100%;
 }
 
-.connect_us {
+.contact_us {
   display: flex;
   flex: 1;
   background: url("../img/6_background.png");
@@ -588,26 +588,26 @@ strong {
   align-items: center;
 }
 
-.connect_us .wrap {
+.contact_us .wrap {
   margin-left: 162px;
   min-width: 560px;
 }
 
-.connect_us .main_title {
+.contact_us .main_title {
   font-size: 34px;
   line-height: 30px;
   color: #fff;
   margin-bottom: 12px;
 }
 
-.connect_us .sub_title {
+.contact_us .sub_title {
   font-size: 16px;
   line-height: 30px;
   color: #fff;
   margin-bottom: 40px;
 }
 
-.connect_us input[type=text] {
+.contact_us input[type=text] {
   display: block;
   background: inherit;
   border: 1px solid #fff;
@@ -621,7 +621,7 @@ strong {
   box-sizing: border-box;
 }
 
-.connect_us .contents {
+.contact_us .contents {
   height: 138px;
   background: inherit;
   border: 1px solid #fff;
@@ -637,24 +637,24 @@ strong {
   box-sizing: border-box;
 }
 
-.connect_us .wrap input::placeholder {
+.contact_us .wrap input::placeholder {
   font-size: 16px;
   color: #fff;
 }
 
-.connect_us .contents::placeholder {
+.contact_us .contents::placeholder {
   font-family: 'Noto Sans KR';
   color: #fff;
   font-size: 16px;
 }
 
-.connect_us .agree_zone {
+.contact_us .agree_zone {
   display: flex;
   align-items: center;
   margin-bottom: 40px;
 }
 
-.connect_us .agree_zone input[type=checkbox] {
+.contact_us .agree_zone input[type=checkbox] {
   width: 22px;
   height: 22px;
   margin: 0;
@@ -663,17 +663,17 @@ strong {
   margin-right: 6px;
 }
 
-.connect_us .agree_zone .agree_text {
+.contact_us .agree_zone .agree_text {
   color: #fff;
   font-size: 14px;
 }
 
-.connect_us .agree_zone .agree_bar {
+.contact_us .agree_zone .agree_bar {
   color: #fff;
   margin: 0px 8px;
 }
 
-.connect_us .connect_submit {
+.contact_us .contact_submit {
   width: 100%;
   border-radius: 5px;
   padding: 20px;
@@ -685,7 +685,7 @@ strong {
   font-family: 'Noto Sans KR';
 }
 
-.connect_map {
+.contact_map {
   flex: 1;
 }
 
@@ -701,4 +701,4 @@ strong {
 
 
 
-/* Connect 끝 */
+/* contact 끝 */
