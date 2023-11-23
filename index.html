@@ -520,6 +520,14 @@
     });
 
     $(".swiper_items").on("click", function () {
+      if (
+        $(this).siblings().hasClass("active") === true ||
+        $(this).hasClass("active") === true
+      ) {
+        $(this).siblings().removeClass("active");
+        $(this).removeClass("active");
+      }
+      $(this).addClass("active");
       src = $(this).css("background-image");
       arr = src.split("url");
       $(this)
