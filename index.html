@@ -620,6 +620,11 @@
         return false;
       }
 
+      if ($("input:checkbox[name=agree_privacy]").is(":checked") === false) {
+        alert("개인정보수집에 동의해주세요.");
+        return false;
+      }
+
       $.ajax({
         type: "POST",
         url: "/mail/send_mail_smtp.php",
