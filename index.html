@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <link rel="icon" href="./img/favicon.ico" type="image/x-icon" />
+
     <!-- CSS -->
     <link
       rel="stylesheet"
@@ -515,8 +517,8 @@
           "main",
           "company",
           "business",
-          "business",
-          "business",
+          "business2",
+          "business3",
           "place",
           "kenaf",
           "contact",
@@ -543,7 +545,12 @@
             $(".nav_list").eq(0).addClass("active");
           } else if (anchorLink === "company") {
             $(".nav_list").eq(1).addClass("active");
-          } else if (anchorLink === "business" || anchorLink === "place") {
+          } else if (
+            anchorLink === "business" ||
+            anchorLink === "business2" ||
+            anchorLink === "business3" ||
+            anchorLink === "place"
+          ) {
             $(".nav_list").eq(2).addClass("active");
           } else if (anchorLink === "kenaf") {
             $(".nav_list").eq(3).addClass("active");
