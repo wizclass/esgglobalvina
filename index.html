@@ -21,42 +21,41 @@
     <title>ESG GLOBAL VINA</title>
   </head>
   <body>
-    <div id="fullpage">
-      <section class="section main">
-        <div id="header">
-          <div class="header_wrap">
-            <div id="logo">
-              <a href="/">
-                <img src="./img/logo.png" alt="" />
-              </a>
-            </div>
-
-            <nav>
-              <div class="nav_list play_bold">
-                <a href="#main">MAIN</a>
-              </div>
-              <div class="nav_list play_bold">
-                <a href="#company">COMPANY</a>
-              </div>
-              <div class="nav_list play_bold">
-                <a href="#business1">BUSINESS</a>
-              </div>
-              <div class="nav_list play_bold">
-                <a href="#KENAF">KENAF</a>
-              </div>
-              <div class="nav_list play_bold">
-                <a href="#contact">CONTACT</a>
-              </div>
-              <div class="nav_list play_bold">
-                <a class="language" href="javascript:void(0)"
-                  >KOR
-                  <img src="./img/vector.png" alt="" />
-                </a>
-              </div>
-            </nav>
-          </div>
+    <div id="header">
+      <div class="header_wrap">
+        <div id="logo">
+          <a href="/">
+            <img src="./img/logo.png" alt="" />
+          </a>
         </div>
 
+        <nav class="navbar">
+          <div class="nav_list play_bold" data-name="main">
+            <a href="#main">MAIN</a>
+          </div>
+          <div class="nav_list play_bold" data-name="company">
+            <a href="#company">COMPANY</a>
+          </div>
+          <div class="nav_list play_bold" data-name="business">
+            <a href="#business">BUSINESS</a>
+          </div>
+          <div class="nav_list play_bold" data-name="kenaf">
+            <a href="#kenaf">KENAF</a>
+          </div>
+          <div class="nav_list play_bold" data-name="contact">
+            <a href="#contact">CONTACT</a>
+          </div>
+          <div class="nav_list play_bold">
+            <a class="language" href="javascript:void(0)"
+              >KOR
+              <img src="./img/vector.png" alt="" />
+            </a>
+          </div>
+        </nav>
+      </div>
+    </div>
+    <div id="fullpage">
+      <section class="section main">
         <div class="main wrap">
           <h1 class="main top_title">탄소중립 실천으로</h1>
           <h3 class="main middle_title">기후위기 극복에 앞장서는 기업</h3>
@@ -82,13 +81,7 @@
             </h5>
             <h5 class="company bottom_title">
               케나프는 각종 영양성분이 풍부한 최적의 사료작물이며,<br />
-              2023년 기준 연간 약 15,000톤 생산 규모로 재배되고 있습니다.<br />
-              케나프 농장은 지속적으로 확장되어 2025년 기준 연간 약 250,000톤
-              생산 규모가 될 예정입니다.
-            </h5>
-            <h5 class="company bottom_title">
-              또한 케나프는 활성탄, 2차전지 음극재, 천연펄프, 건축 자재,
-              생분해플라스틱 등<br />
+              활성탄, 2차전지 음극재, 천연펄프, 건축 자재, 생분해플라스틱 등<br />
               다양한 친환경 제품의 재료로 활용될 수 있습니다.
             </h5>
             <h5 class="company bottom_title">
@@ -113,8 +106,8 @@
                 <strong>케나프 재배</strong>
               </h3>
               <h5 class="business bottom_title">
-                ESG GLOBAL VINA의 케나프 농장은 베트남 Binh Phuoc성의 Dong Xoai
-                인근에 위치하고 있습니다.<br />
+                ESG GLOBAL VINA의 케나프 농장은 베트남 Binh Phuoc성에 위치하고
+                있습니다.<br />
                 해당 지역의 비옥한 토지와 아열대 기후의 조화로 연간 최대 5모작
                 생산이 가능합니다. 종자를 외부에서 조달하는 방식이 아닌,<br />
                 자체 케나프 종자 농장을 운영하여 안정적으로 케나프를
@@ -418,27 +411,31 @@
                   연락을 드리겠습니다.
                 </h3>
                 <input
+                  id="user_name"
                   type="text"
                   class="info"
                   placeholder="이름"
-                  name="name"
+                  name="user_name"
                 />
                 <input
+                  id="user_phone"
                   type="text"
                   class="info"
                   placeholder="연락처"
-                  name="phone"
+                  name="user_phone"
                 />
                 <input
+                  id="user_email"
                   type="text"
                   class="info"
                   placeholder="이메일"
-                  name="email"
+                  name="user_email"
                 />
                 <textarea
+                  id="textarea"
                   class="contents"
                   placeholder="내용 입력"
-                  name="contents"
+                  name="textarea"
                 ></textarea>
                 <div class="agree_zone">
                   <input
@@ -452,7 +449,11 @@
                   <span class="agree_bar">|</span>
                   <span class="agree_text"><strong>전문보기</strong></span>
                 </div>
-                <button class="contact_submit">
+                <button
+                  type="button"
+                  class="contact_submit"
+                  onclick="sendMail();"
+                >
                   <strong>문의하기</strong>
                 </button>
               </form>
@@ -471,8 +472,35 @@
           </div>
           <a class="up_button" href="#main"></a>
         </div>
-        <footer class="footer"></footer>
       </section>
+      <footer class="footer section fp-auto-height">
+        <div class="footer_wrap">
+          <div class="footer_contents">
+            <h5 class="footer_title"><strong>ESG GLOBAL VINA</strong></h5>
+            <div class="footer_info">
+              <span>
+                <strong
+                  >Address : ấp Thuận hòa 1, xã Thuận Lợi, huyện Đồng Phú, tinh
+                  Binh phước</strong
+                >
+              </span>
+              <span class="footer_bar"><strong>|</strong></span>
+              <span>
+                <strong>E-mail : support@esgglobalvina.com</strong>
+              </span>
+            </div>
+
+            <h5 class="footer_info">
+              <strong
+                >Copyright ⓒ 2023 ESG GLOBAL VINA. All RIGHTS RESERVED</strong
+              >
+            </h5>
+          </div>
+          <div class="footer_logo">
+            <img src="./img/logo.png" alt="" />
+          </div>
+        </div>
+      </footer>
     </div>
   </body>
 
@@ -486,19 +514,41 @@
         anchors: [
           "main",
           "company",
-          "business1",
-          "business2",
-          "business3",
+          "business",
+          "business",
+          "business",
           "place",
-          "KENAF",
+          "kenaf",
           "contact",
         ],
 
         onLeave: function (index, anchors, di) {
           $("#fp-nav").hide();
 
+          console.log(di);
           if (anchors == 3 || anchors == 4 || anchors == 5) {
             $("#fp-nav").show();
+          }
+
+          if (anchors != 1) {
+            $("#header").css("background", "#000");
+          } else {
+            $("#header").css("background", "none");
+          }
+        },
+
+        afterLoad: function (anchorLink, index) {
+          $(".nav_list").removeClass("active");
+          if (anchorLink === "main") {
+            $(".nav_list").eq(0).addClass("active");
+          } else if (anchorLink === "company") {
+            $(".nav_list").eq(1).addClass("active");
+          } else if (anchorLink === "business" || anchorLink === "place") {
+            $(".nav_list").eq(2).addClass("active");
+          } else if (anchorLink === "kenaf") {
+            $(".nav_list").eq(3).addClass("active");
+          } else if (anchorLink === "contact") {
+            $(".nav_list").eq(4).addClass("active");
           }
         },
       });
@@ -535,5 +585,56 @@
         .prev()
         .css("background-image", `url${arr[1]}`);
     });
+
+    function sendMail() {
+      var re =
+        /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i;
+
+      if (!$("#user_name").val()) {
+        alert("Please enter your name.");
+        $("#user_name").focus();
+        return false;
+      }
+
+      if (!$("#user_phone").val()) {
+        alert("Please enter your phone.");
+        $("#user_phone").focus();
+        return false;
+      }
+
+      if (!$("#user_email").val()) {
+        alert("Please enter your email.");
+        $("#user_email").focus();
+        return false;
+      }
+
+      if (!re.test($("#user_email").val())) {
+        alert("Not the correct email format.");
+        $("#user_email").focus();
+        return false;
+      }
+
+      if (!$("#textarea").val()) {
+        alert("Please enter additional request.");
+        $("#textarea").focus();
+        return false;
+      }
+
+      $.ajax({
+        type: "POST",
+        url: "/mail/send_mail_smtp.php",
+        dataType: "json",
+        data: {
+          user_name: $("#user_name").val(),
+          user_phone: $("#user_phone").val(),
+          user_email: $("#user_email").val(),
+          textarea: $("#textarea").val(),
+        },
+        complete: function (res) {
+          alert("Mail sent successfully");
+          location.reload();
+        },
+      });
+    }
   </script>
 </html>
