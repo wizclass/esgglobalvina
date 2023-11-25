@@ -20,6 +20,33 @@
     <script src="./js/jquery.fullpage.extensions.min.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
+    <script>
+
+      $.lang = {};
+
+      $.lang.vi = {
+        0: "Bằng cách thực hành tính trung hòa carbon",
+        1: "Một công ty đi đầu vượt qua khủng hoảng khí hậu",
+        2: `ESG GLOBAL VINA là công ty con tại Việt Nam của ESG GLOBAL, công ty trung hòa carbon hàng đầu.
+Chúng tôi đang góp phần giảm khí thải nhà kính bằng cách vận hành các trang trại quy mô lớn 'Kenaf', một nhà máy lọc môi trường.`,
+
+      }
+
+      function setLanguage(curLang) {
+        $('[data-langNum]').each(function () {
+          var $this = $(this);
+          $this.html($.lang[curLang][$this.data('langnum')]);
+        });
+      }
+
+      $(document).ready(function () {
+        $('.language').click(function () {
+          var lang = $(this).data('lang');
+          setLanguage(lang);
+        });
+      })
+    </script>
+
     <title>ESG GLOBAL VINA</title>
   </head>
   <body>
@@ -48,7 +75,7 @@
             <a href="#contact">CONTACT</a>
           </div>
           <div class="nav_list play_bold">
-            <a class="language" href="javascript:void(0)"
+            <a class="language" href="javascript:void(0)" data-lang="vi"
               >KOR
               <img src="./img/vector.png" alt="" />
             </a>
@@ -59,8 +86,8 @@
     <div id="fullpage">
       <section class="section main">
         <div class="main wrap">
-          <h1 class="main top_title">탄소중립 실천으로</h1>
-          <h3 class="main middle_title">기후위기 극복에 앞장서는 기업</h3>
+          <h1 class="main top_title" data-langnum="0">탄소중립 실천으로</h1>
+          <h3 class="main middle_title" data-langnum="1">기후위기 극복에 앞장서는 기업</h3>
           <span class="main bottom_title play_bold">ESG GLOBAL VINA</span>
         </div>
         <div class="main bottom_wrap">
@@ -75,13 +102,13 @@
             <h3 class="company middle_title play_bold">
               ESG GLOBAL <span style="color: #3ea053">VINA</span>
             </h3>
-            <h5 class="company bottom_title">
+            <h5 class="company bottom_title" data-langNum="3">
               ESG GLOBAL VINA는 탄소중립 선도기업 ESG GLOBAL의 베트남 현지
               법인이며<br />
               환경정화 식물인 ‘케나프(Kenaf)’ 농장을 대규모로 운영함으로써
               온실가스 감축에 기여하고 있습니다.<br />
             </h5>
-            <h5 class="company bottom_title">
+            <h5 class="company bottom_title" data-langNum="4">
               케나프는 각종 영양성분이 풍부한 최적의 사료작물이며,<br />
               활성탄, 2차전지 음극재, 천연펄프, 건축 자재, 생분해플라스틱 등<br />
               다양한 친환경 제품의 재료로 활용될 수 있습니다.
