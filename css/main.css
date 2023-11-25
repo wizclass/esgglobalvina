@@ -209,12 +209,41 @@ strong {
   transition: 0.3s all;
 }
 
-.nav_list a {
+.nav_list > a {
   color: #fff;
   font-size: 16px;
   font-weight: 700;
   padding: 0px 10px;
   height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.dropdown {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.dropdown li {
+  display: none;
+}
+
+.dropdown .active {
+  display: block;
+}
+
+.dropdown:hover li{
+  display: block;
+}
+
+.language {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 3px 10px;
   display: flex;
   align-items: center;
 }
