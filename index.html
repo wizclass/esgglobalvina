@@ -21,30 +21,76 @@
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
     <script>
-
       $.lang = {};
 
       $.lang.vi = {
         0: "Bằng cách thực hành tính trung hòa carbon",
         1: "Một công ty đi đầu vượt qua khủng hoảng khí hậu",
-        2: `ESG GLOBAL VINA là công ty con tại Việt Nam của ESG GLOBAL, công ty trung hòa carbon hàng đầu.
-Chúng tôi đang góp phần giảm khí thải nhà kính bằng cách vận hành các trang trại quy mô lớn 'Kenaf', một nhà máy lọc môi trường.`,
-
-      }
+        2: `ESG GLOBAL VINA là công ty con tại Việt Nam của ESG GLOBAL, công ty trung hòa carbon hàng đầu.<br>
+            Chúng tôi đang góp phần giảm khí thải nhà kính bằng cách vận hành các trang trại quy mô lớn 'Kenaf',<br> một nhà máy lọc môi trường.`,
+        3: `Kenaf là loại cây thức ăn chăn nuôi tối ưu, giàu chất dinh dưỡng khác nhau.<br>
+            Than hoạt tính, vật liệu cực dương của pin thứ cấp, bột giấy tự nhiên,<br> vật liệu xây dựng, nhựa phân hủy sinh học, v.v.<br>
+            Nó có thể được sử dụng làm nguyên liệu cho nhiều sản phẩm thân thiện với môi trường.`,
+        4: `ESG GLOBAL VINA góp phần đáng kể vào việc vượt qua khủng hoảng khí hậu.<br>
+                    húng tôi đang nổi lên như một công ty thân thiện với môi trường.`,
+        5: `Cám ơn`,
+        6: `Trồng Kenaf`,
+        7: `Trang trại kenaf của ESG GLOBAL VINA nằm ở tỉnh Bình Phước, Việt Nam.
+                    Có.<br />
+                    Có thể trồng tới 5 vụ/năm nhờ sự kết hợp giữa đất đai màu mỡ của vùng và khí hậu cận nhiệt đới.
+                    Có thể sản xuất được. Thay vì mua hạt giống từ bên ngoài,<br />
+                    Chúng tôi vận hành trang trại hạt giống kenaf của riêng mình để sản xuất kenaf ổn định.
+                    Được trồng trọt.<br />
+                    Ngoài ra, chúng tôi đã lập kế hoạch mở rộng trang trại hàng năm để liên tục sản xuất kenaf.
+                    Chúng tôi đang trong quá trình mở rộng quy mô.`,
+        8: "gieo hạt",
+        9: "văn hoá",
+        10: "mùa gặt",
+        11: "sản xuất thức ăn chăn nuôi",
+        12: `Kenaf thu hoạch được vận chuyển đến nhà máy chế biến gần trang trại, nghiền nát và sấy khô.
+                    Thông qua quá trình này, nó được chế biến thành dạng viên làm thức ăn chăn nuôi.<br />
+                    Viên có hàm lượng protein thô phù hợp với khẩu vị và thành phần dinh dưỡng của các loại vật nuôi khác nhau.
+                    Nó được sản xuất phù hợp.<br />
+                    Chất lượng cao dựa trên công nghệ sản xuất thức ăn chăn nuôi độc đáo của ESG GLOBAL VINA
+                    Chúng tôi sản xuất thức ăn kenaf.`,
+        13: "đập vỡ",
+        14: "khô",
+        15: "viên",
+        16: "trang trại kenaf",
+        17: `Trang trại kenaf của ESG GLOBAL VINA nằm ở tỉnh Bình Phước, Việt Nam.
+                    có. Nhờ sự kết hợp giữa đất đai màu mỡ độc đáo của Việt Nam và khí hậu cận nhiệt đới,
+                    Đây là môi trường tối ưu cho tối đa 5 bản sao.<br />
+                    ESG GLOBAL VINA sản xuất hạt giống chất lượng bằng cách sở hữu trang trại hạt giống của riêng mình.
+                    Thức ăn có chất lượng tuyệt vời và nhiều sản phẩm thân thiện với môi trường nhờ nguồn cung ổn định
+                    Chúng tôi sản xuất nguyên liệu thô.`,
+        18: "Nông trại",
+        19: "thu hoạch",
+        20: "Tình trạng kinh doanh",
+        21: "nhà máy thức ăn chăn nuôi",
+        22: "Kenaf",
+        23: `Cao tới 3m hoặc hơn sau 100 ngày trồng<br />
+                    Nó có tốc độ tăng trưởng nhanh và năng suất cao so với các loại cây thức ăn chăn nuôi khác.<br />
+                    Nó có khả năng thích ứng rộng với khí hậu và đất đai, ngay cả trong môi trường khắc nghiệt<br />
+                    Tỷ lệ nảy mầm tuyệt vời và tỷ lệ hấp thụ carbon dioxide cao hơn so với các loại cây trồng thông thường<br />
+                    Hiệu quả giảm carbon là tuyệt vời.`,
+        24: "Trường ứng dụng",
+        25: `Thức ăn chăn nuôi, than hoạt tính, bột giấy tự nhiên, vật liệu cực dương pin thứ cấp,
+      Vật liệu xây dựng, nhựa phân hủy sinh học, v.v.`,
+      };
 
       function setLanguage(curLang) {
-        $('[data-langNum]').each(function () {
+        $("[data-langNum]").each(function () {
           var $this = $(this);
-          $this.html($.lang[curLang][$this.data('langnum')]);
+          $this.html($.lang[curLang][$this.data("langnum")]);
         });
       }
 
       $(document).ready(function () {
-        $('.language').click(function () {
-          var lang = $(this).data('lang');
+        $(".language").click(function () {
+          var lang = $(this).data("lang");
           setLanguage(lang);
         });
-      })
+      });
     </script>
 
     <title>ESG GLOBAL VINA</title>
@@ -87,7 +133,9 @@ Chúng tôi đang góp phần giảm khí thải nhà kính bằng cách vận h
       <section class="section main">
         <div class="main wrap">
           <h1 class="main top_title" data-langnum="0">탄소중립 실천으로</h1>
-          <h3 class="main middle_title" data-langnum="1">기후위기 극복에 앞장서는 기업</h3>
+          <h3 class="main middle_title" data-langnum="1">
+            기후위기 극복에 앞장서는 기업
+          </h3>
           <span class="main bottom_title play_bold">ESG GLOBAL VINA</span>
         </div>
         <div class="main bottom_wrap">
@@ -102,22 +150,22 @@ Chúng tôi đang góp phần giảm khí thải nhà kính bằng cách vận h
             <h3 class="company middle_title play_bold">
               ESG GLOBAL <span style="color: #3ea053">VINA</span>
             </h3>
-            <h5 class="company bottom_title" data-langNum="3">
+            <h5 class="company bottom_title" data-langNum="2">
               ESG GLOBAL VINA는 탄소중립 선도기업 ESG GLOBAL의 베트남 현지
               법인이며<br />
               환경정화 식물인 ‘케나프(Kenaf)’ 농장을 대규모로 운영함으로써
               온실가스 감축에 기여하고 있습니다.<br />
             </h5>
-            <h5 class="company bottom_title" data-langNum="4">
+            <h5 class="company bottom_title" data-langNum="3">
               케나프는 각종 영양성분이 풍부한 최적의 사료작물이며,<br />
               활성탄, 2차전지 음극재, 천연펄프, 건축 자재, 생분해플라스틱 등<br />
               다양한 친환경 제품의 재료로 활용될 수 있습니다.
             </h5>
-            <h5 class="company bottom_title">
+            <h5 class="company bottom_title" data-langNum="4">
               ESG GLOBAL VINA는 기후위기 극복에 실질적으로 기여하는
               친환경기업으로 발돋움하고 있습니다.
             </h5>
-            <h5 class="company bottom_title">감사합니다.</h5>
+            <h5 class="company bottom_title" data-langNum="5">감사합니다.</h5>
           </div>
           <div class="company image"></div>
         </div>
@@ -132,9 +180,9 @@ Chúng tôi đang góp phần giảm khí thải nhà kính bằng cách vận h
             <div class="business inner">
               <h1 class="business top_title play_regular">Business</h1>
               <h3 class="business middle_title">
-                <strong>케나프 재배</strong>
+                <strong data-langNum="6">케나프 재배</strong>
               </h3>
-              <h5 class="business bottom_title">
+              <h5 class="business bottom_title" data-langNum="7">
                 ESG GLOBAL VINA의 케나프 농장은 베트남 Binh Phuoc성에 위치하고
                 있습니다.<br />
                 해당 지역의 비옥한 토지와 아열대 기후의 조화로 연간 최대 5모작
@@ -158,7 +206,7 @@ Chúng tôi đang góp phần giảm khí thải nhà kính bằng cách vận h
                     border-radius: 5px;
                   "
                 >
-                  <span class="roboto_bold">파종</span>
+                  <span class="roboto_bold" data-langNum="8">파종</span>
                 </div>
                 <div
                   class="swiper_items"
@@ -173,7 +221,7 @@ Chúng tôi đang góp phần giảm khí thải nhà kính bằng cách vận h
                     border-radius: 5px;
                   "
                 >
-                  <span class="roboto_bold">재배</span>
+                  <span class="roboto_bold" data-langNum="9">재배</span>
                 </div>
                 <div
                   class="swiper_items"
@@ -188,7 +236,7 @@ Chúng tôi đang góp phần giảm khí thải nhà kính bằng cách vận h
                     border-radius: 5px;
                   "
                 >
-                  <span class="roboto_bold">수확</span>
+                  <span class="roboto_bold" data-langNum="10">수확</span>
                 </div>
               </div>
             </div>
@@ -204,8 +252,10 @@ Chúng tôi đang góp phần giảm khí thải nhà kính bằng cách vận h
           <div class="business content">
             <div class="business inner">
               <h1 class="business top_title play_regular">Business</h1>
-              <h3 class="business middle_title"><strong>사료 제조</strong></h3>
-              <h5 class="business bottom_title">
+              <h3 class="business middle_title">
+                <strong data-langNum="11">사료 제조</strong>
+              </h3>
+              <h5 class="business bottom_title" data-langNum="12">
                 수확한 케나프는 농장 인근의 가공 공장으로 운반, 분쇄 후 건조
                 과정을 거쳐 가축 사료용 펠릿으로 가공됩니다.<br />
                 펠릿은 다양한 가축의 기호와 영양 성분을 고려한 조단백 함량에
@@ -227,7 +277,7 @@ Chúng tôi đang góp phần giảm khí thải nhà kính bằng cách vận h
                     border-radius: 5px;
                   "
                 >
-                  <span class="roboto_bold">분쇄</span>
+                  <span class="roboto_bold" data-langNum="13">분쇄</span>
                 </div>
                 <div
                   class="swiper_items"
@@ -242,7 +292,7 @@ Chúng tôi đang góp phần giảm khí thải nhà kính bằng cách vận h
                     border-radius: 5px;
                   "
                 >
-                  <span class="roboto_bold">건조</span>
+                  <span class="roboto_bold" data-langNum="14">건조</span>
                 </div>
                 <div
                   class="swiper_items"
@@ -257,7 +307,7 @@ Chúng tôi đang góp phần giảm khí thải nhà kính bằng cách vận h
                     border-radius: 5px;
                   "
                 >
-                  <span class="roboto_bold">펠릿</span>
+                  <span class="roboto_bold" data-langNum="15">펠릿</span>
                 </div>
               </div>
             </div>
@@ -274,9 +324,9 @@ Chúng tôi đang góp phần giảm khí thải nhà kính bằng cách vận h
             <div class="business inner">
               <h1 class="business top_title play_regular">Business</h1>
               <h3 class="business middle_title">
-                <strong>케나프 농장</strong>
+                <strong data-langNum="16">케나프 농장</strong>
               </h3>
-              <h5 class="business bottom_title">
+              <h5 class="business bottom_title" data-langNum="17">
                 ESG GLOBAL VINA의 케나프 농장은 베트남 Binh Phuoc성에 위치하고
                 있습니다. 베트남 특유의 비옥한 토양과 아열대 기후의 조화로 연간
                 최대 5모작이 가능한 최적의 환경입니다.<br />
@@ -298,7 +348,7 @@ Chúng tôi đang góp phần giảm khí thải nhà kính bằng cách vận h
                     border-radius: 5px;
                   "
                 >
-                  <span class="roboto_bold">농장</span>
+                  <span class="roboto_bold" data-langNum="18">농장</span>
                 </div>
                 <div
                   class="swiper_items"
@@ -313,7 +363,7 @@ Chúng tôi đang góp phần giảm khí thải nhà kính bằng cách vận h
                     border-radius: 5px;
                   "
                 >
-                  <span class="roboto_bold">농장</span>
+                  <span class="roboto_bold" data-langNum="18">농장</span>
                 </div>
                 <div
                   class="swiper_items"
@@ -328,7 +378,7 @@ Chúng tôi đang góp phần giảm khí thải nhà kính bằng cách vận h
                     border-radius: 5px;
                   "
                 >
-                  <span class="roboto_bold">수확</span>
+                  <span class="roboto_bold" data-langNum="19">수확</span>
                 </div>
               </div>
             </div>
@@ -340,7 +390,7 @@ Chúng tôi đang góp phần giảm khí thải nhà kính bằng cách vận h
           <div class="place_title">
             <h1 class="main play_bold">Business</h1>
             <h1 class="main play_bold">Place</h1>
-            <h3 class="sub">사업장 현황</h3>
+            <h3 class="sub" data-langNum="20">사업장 현황</h3>
           </div>
 
           <div class="swiper-container">
@@ -348,25 +398,25 @@ Chúng tôi đang góp phần giảm khí thải nhà kính bằng cách vận h
               <div class="swiper-slide">
                 <img src="./img/place_img_04_1.png" alt="케나프 농장" />
                 <div class="place_name">
-                  <p><strong>케나프 농장</strong></p>
+                  <p><strong data-langNum="16">케나프 농장</strong></p>
                 </div>
               </div>
               <div class="swiper-slide">
                 <img src="./img/place_img_04_2.png" alt="사료 공장" />
                 <div class="place_name">
-                  <p><strong>사료 공장</strong></p>
+                  <p><strong data-langNum="21">사료 공장</strong></p>
                 </div>
               </div>
               <div class="swiper-slide">
                 <img src="./img/place_img_04_3.png" alt="케나프 농장" />
                 <div class="place_name">
-                  <p><strong>케나프 농장</strong></p>
+                  <p><strong data-langNum="16">케나프 농장</strong></p>
                 </div>
               </div>
               <div class="swiper-slide">
                 <img src="./img/place_img_04_4.png" alt="케나프 농장" />
                 <div class="place_name">
-                  <p><strong>케나프 농장</strong></p>
+                  <p><strong data-langNum="16">케나프 농장</strong></p>
                 </div>
               </div>
               <div class="swiper-slide">
@@ -386,8 +436,8 @@ Chúng tôi đang góp phần giảm khí thải nhà kính bằng cách vận h
           <div class="kenaf col-4" style="background: url('./img/05_1.png')">
             <div class="kenaf boxs">
               <img src="./img/icon_01.png" class="logo" alt="KENAF 1" />
-              <h1 class="title">케나프</h1>
-              <h3 class="contents">
+              <h1 class="title" data-langNum="22">케나프</h1>
+              <h3 class="contents" data-langNum="23">
                 재배 후 100일이 경과하면 최대 3m 이상으로 자라나는<br />
                 빠른 성장성 및 타 사료작물 대비 높은 생산성을 보유합니다.<br />
                 기후와 토양에 대한 광범위한 적응력을 지녀 척박한 환경속에서도<br />
@@ -395,8 +445,8 @@ Chúng tôi đang góp phần giảm khí thải nhà kính bằng cách vận h
                 탄소저감 효과가 매우 뛰어납니다.
               </h3>
               <img src="./img/Line 10.png" alt="" />
-              <h3 class="contents">
-                <strong>활용 분야</strong><br />
+              <h3 class="contents" data-langNum="24">
+                <strong data-langNum="25">활용 분야</strong><br />
                 가축 사료, 활성탄, 천연펄프, 2차전지 음극재,<br />
                 건축 자재, 생분해플라스틱 등
               </h3>
