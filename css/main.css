@@ -1080,6 +1080,7 @@ button.btn_close {
 }
 
 @media all and (max-width: 991px) {
+
   .ham_menu {
     display: block;
     z-index: 10;
@@ -1269,15 +1270,16 @@ button.btn_close {
   }
 
   .business.image {
-    flex: 33%;
+    flex: 35%;
   }
 
   .business.content {
-    flex: 67%;
+    flex: 65%;
   }
 
   .business.inner {
-    padding: 0px 24px;
+    padding: 52px 24px 0px 24px;
+    height: auto;
   }
 
   .business.top_title {
