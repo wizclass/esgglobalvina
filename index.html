@@ -24,8 +24,8 @@
       $.lang = {};
 
       $.lang.ko = {
-        0: "탄소중립 실천으로",
-        1: "기후위기 극복에 앞장서는 기업",
+        0: `<strong>탄소중립 실천으로 <br /></strong>
+            기후위기 극복에 앞장서는 기업`,
         2: `ESG GLOBAL VINA는 탄소중립 선도기업 ESG GLOBAL의 베트남 현지
   법인이며<br />
   환경정화 식물인 ‘케나프(Kenaf)’ 농장을 대규모로 운영함으로써
@@ -97,8 +97,9 @@
       };
 
       $.lang.en = {
-        0: "By practicing carbon neutrality",
-        1: "A company taking the lead in overcoming the climate crisis",
+        0: `<strong>By practicing carbon neutrality<br /></strong>
+        A company taking the lead in overcoming the climate crisis`,
+        1: "",
         2: `ESG GLOBAL VINA is the Vietnamese local branch of ESG GLOBAL, a leading carbon neutral company.
   It is a corporation<br />
   By operating a large-scale ‘Kenaf’ farm, an environmental purification plant,
@@ -113,7 +114,7 @@
         7: `ESG GLOBAL VINA's kenaf farm is located in Binh Phuoc Province, Vietnam.
   Yes.<br />
   Up to 5 crops per year thanks to the combination of the area's fertile land and subtropical climate.
-  Production is possible. Rather than procuring seeds from outside,<br />
+  Production is possible.<br /> Rather than procuring seeds from outside,<br />
   We operate our own kenaf seed farm to produce stable kenaf.
   Cultivated.<br />
   In addition, we established an annual farm expansion plan to continuously produce kenaf.
@@ -170,8 +171,9 @@
       };
 
       $.lang.vi = {
-        0: "Bằng cách thực hành tính trung hòa carbon",
-        1: "Một công ty đi đầu vượt qua khủng hoảng khí hậu",
+        0: `<strong>Bằng cách thực hành tính trung hòa carbon <br /><strong>
+          Một công ty đi đầu vượt qua khủng hoảng khí hậu`,
+        1: "",
         2: `ESG GLOBAL VINA là công ty con tại Việt Nam của ESG GLOBAL, công ty trung hòa carbon hàng đầu.<br>
             Chúng tôi đang góp phần giảm khí thải nhà kính bằng cách vận hành các trang trại quy mô lớn 'Kenaf',<br> một nhà máy lọc môi trường.`,
         3: `Kenaf là loại cây thức ăn chăn nuôi tối ưu, giàu chất dinh dưỡng khác nhau.<br>
@@ -184,7 +186,7 @@
         7: `Trang trại kenaf của ESG GLOBAL VINA nằm ở tỉnh Bình Phước, Việt Nam.
                     Có.<br />
                     Có thể trồng tới 5 vụ/năm nhờ sự kết hợp giữa đất đai màu mỡ của vùng và khí hậu cận nhiệt đới.
-                    Có thể sản xuất được. Thay vì mua hạt giống từ bên ngoài,<br />
+                    Có thể sản xuất được.<br /> Thay vì mua hạt giống từ bên ngoài,<br />
                     Chúng tôi vận hành trang trại hạt giống kenaf của riêng mình để sản xuất kenaf ổn định.
                     Được trồng trọt.<br />
                     Ngoài ra, chúng tôi đã lập kế hoạch mở rộng trang trại hàng năm để liên tục sản xuất kenaf.
@@ -277,7 +279,11 @@
             <img src="./img/logo.png" alt="" />
           </a>
         </div>
-
+        <div class="ham_menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
         <nav class="navbar">
           <div class="nav_list play_bold" data-name="main">
             <a href="#main">MAIN</a>
@@ -295,37 +301,42 @@
             <a href="#contact">CONTACT</a>
           </div>
           <div class="nav_list play_bold">
+            <a class="lang_btn" href="javascript:void(0)" data-lang="ko"
+              >KOR
+              <img src="./img/vector.png" alt="" />
+            </a>
             <ul class="dropdown">
-              <li class="active">
-                <a class="language" href="javascript:void(0)" data-lang="ko"
-                  >KOR
-                  <img src="./img/vector.png" alt="" />
-                </a>
-              </li>
               <li>
                 <a class="language" href="javascript:void(0)" data-lang="en"
                   >ENG
-                  <img src="./img/vector.png" alt="" />
+                </a>
+              </li>
+              <li class="active">
+                <a
+                  class="language active"
+                  href="javascript:void(0)"
+                  data-lang="ko"
+                  >KOR
                 </a>
               </li>
               <li>
                 <a class="language" href="javascript:void(0)" data-lang="vi"
-                  >VI
-                  <img src="./img/vector.png" alt="" />
+                  >VNM
                 </a>
               </li>
             </ul>
           </div>
         </nav>
+        <div class="side_dim"></div>
       </div>
     </div>
     <div id="fullpage">
       <section class="section main">
         <div class="main wrap">
-          <h1 class="main top_title" data-langnum="0">탄소중립 실천으로</h1>
-          <h3 class="main middle_title" data-langnum="1">
+          <h1 class="main top_title" data-langnum="0">
+            <strong>탄소중립 실천으로 <br /></strong>
             기후위기 극복에 앞장서는 기업
-          </h3>
+          </h1>
           <span class="main bottom_title play_bold">ESG GLOBAL VINA</span>
         </div>
         <div class="main bottom_wrap">
@@ -368,15 +379,22 @@
           ></div>
           <div class="business content">
             <div class="business inner">
-              <h1 class="business top_title play_regular">Business</h1>
-              <h3 class="business middle_title">
-                <strong data-langNum="6">케나프 재배</strong>
-              </h3>
+              <div class="">
+                <h1 class="business top_title play_regular">Business</h1>
+                <h3 class="business middle_title">
+                  <strong data-langNum="6">케나프 재배</strong>
+                  <a href="#business2" class="arrow_right" style="display: none"
+                    ><img src="./img/arrow-right.png" alt=""
+                  /></a>
+                </h3>
+              </div>
+
               <h5 class="business bottom_title" data-langNum="7">
                 ESG GLOBAL VINA의 케나프 농장은 베트남 Binh Phuoc성에 위치하고
                 있습니다.<br />
                 해당 지역의 비옥한 토지와 아열대 기후의 조화로 연간 최대 5모작
-                생산이 가능합니다. 종자를 외부에서 조달하는 방식이 아닌,<br />
+                생산이 가능합니다.<br />
+                종자를 외부에서 조달하는 방식이 아닌,<br />
                 자체 케나프 종자 농장을 운영하여 안정적으로 케나프를
                 재배합니다.<br />
                 더불어 연도별 농장 확대 계획을 수립하여 지속적인 케나프 생산
@@ -444,6 +462,9 @@
               <h1 class="business top_title play_regular">Business</h1>
               <h3 class="business middle_title">
                 <strong data-langNum="11">사료 제조</strong>
+                <a href="#business3" class="arrow_right" style="display: none"
+                  ><img src="./img/arrow-right.png" alt=""
+                /></a>
               </h3>
               <h5 class="business bottom_title" data-langNum="12">
                 수확한 케나프는 농장 인근의 가공 공장으로 운반, 분쇄 후 건조
@@ -515,11 +536,15 @@
               <h1 class="business top_title play_regular">Business</h1>
               <h3 class="business middle_title">
                 <strong data-langNum="16">케나프 농장</strong>
+                <a href="#place" class="arrow_right" style="display: none"
+                  ><img src="./img/arrow-right.png" alt=""
+                /></a>
               </h3>
               <h5 class="business bottom_title" data-langNum="17">
                 ESG GLOBAL VINA의 케나프 농장은 베트남 Binh Phuoc성에 위치하고
                 있습니다. 베트남 특유의 비옥한 토양과 아열대 기후의 조화로 연간
-                최대 5모작이 가능한 최적의 환경입니다.<br />
+                최대 5모작이 가능한<br />
+                최적의 환경입니다.<br />
                 ESG GLOBAL VINA는 종자농장을 자체 보유함으로써 우량 종자의
                 안정적 공급을 통해 뛰어난 품질의 사료 및 각종 친환경 제품의
                 원료를 생산하고 있습니다.
@@ -548,7 +573,7 @@
                         rgba(0, 0, 0, 0) 0%,
                         rgba(0, 0, 0, 0.3) 100%
                       ),
-                      url('../img/business_img_03_2.png');
+                      url('../img/business_img_03_2.jpg');
                     background-size: cover;
                     border-radius: 5px;
                   "
@@ -563,12 +588,12 @@
                         rgba(0, 0, 0, 0) 0%,
                         rgba(0, 0, 0, 0.3) 100%
                       ),
-                      url('../img/business_img_03_3.png');
+                      url('../img/business_img_03_3.jpg');
                     background-size: cover;
                     border-radius: 5px;
                   "
                 >
-                  <span class="roboto_bold" data-langNum="19">수확</span>
+                  <span class="roboto_bold" data-langNum="18">농장</span>
                 </div>
               </div>
             </div>
@@ -578,33 +603,26 @@
       <section class="section place">
         <div class="place wrap">
           <div class="place_title">
-            <h1 class="main play_bold">Business</h1>
-            <h1 class="main play_bold">Place</h1>
+            <h1 class="main play_bold">Business Place</h1>
             <h3 class="sub" data-langNum="20">사업장 현황</h3>
           </div>
 
           <div class="swiper-container">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
-                <img src="./img/place_img_04_1.png" alt="케나프 농장" />
+                <img src="./img/place_img_04_1.jpg" alt="케나프 농장" />
                 <div class="place_name">
                   <p><strong data-langNum="16">케나프 농장</strong></p>
                 </div>
               </div>
               <div class="swiper-slide">
-                <img src="./img/place_img_04_2.png" alt="사료 공장" />
-                <div class="place_name">
-                  <p><strong data-langNum="21">사료 공장</strong></p>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <img src="./img/place_img_04_3.png" alt="케나프 농장" />
+                <img src="./img/place_img_04_2.jpg" alt="케나프 농장" />
                 <div class="place_name">
                   <p><strong data-langNum="16">케나프 농장</strong></p>
                 </div>
               </div>
               <div class="swiper-slide">
-                <img src="./img/place_img_04_4.png" alt="케나프 농장" />
+                <img src="./img/place_img_04_3.jpg" alt="케나프 농장" />
                 <div class="place_name">
                   <p><strong data-langNum="16">케나프 농장</strong></p>
                 </div>
@@ -622,7 +640,7 @@
         </div>
       </section>
       <section class="section">
-        <div class="kenaf wrap">
+        <div class="kenaf wrap pc">
           <div class="kenaf col-4" style="background: url('./img/05_1.png')">
             <div class="kenaf boxs">
               <img src="./img/icon_01.png" class="logo" alt="KENAF 1" />
@@ -631,7 +649,7 @@
                 재배 후 100일이 경과하면 최대 3m 이상으로 자라나는<br />
                 빠른 성장성 및 타 사료작물 대비 높은 생산성을 보유합니다.<br />
                 기후와 토양에 대한 광범위한 적응력을 지녀 척박한 환경속에서도<br />
-                발아율이 뛰어나고 , 이산화 탄소 흡수율이 일반 작물 보다 높아<br />
+                발아율이 뛰어나고, 이산화 탄소 흡수율이 일반 작물 보다 높아<br />
                 탄소저감 효과가 매우 뛰어납니다.
               </h3>
               <img src="./img/Line 10.png" alt="" />
@@ -667,6 +685,92 @@
                 생산량 측면에서 일반 사료작물 대비<br />
                 월등한 수준을 자랑합니다.
               </h3>
+            </div>
+          </div>
+        </div>
+        <div class="kenaf wrap mobile">
+          <div class="slide" data-anchor="slide1">
+            <div class="kenaf col-4" style="background: url('./img/05_1.png')">
+              <div class="kenaf boxs">
+                <img src="./img/icon_01.png" class="logo" alt="KENAF 1" />
+                <h1 class="title" data-langNum="22">케나프</h1>
+                <h3 class="contents" data-langNum="23">
+                  재배 후 100일이 경과하면 최대 3m 이상으로 자라나는<br />
+                  빠른 성장성 및 타 사료작물 대비 높은 생산성을 보유합니다.<br />
+                  기후와 토양에 대한 광범위한 적응력을 지녀 척박한
+                  환경속에서도<br />
+                  발아율이 뛰어나고, 이산화 탄소 흡수율이 일반 작물 보다 높아<br />
+                  탄소저감 효과가 매우 뛰어납니다.
+                </h3>
+                <img src="./img/Line 10.png" alt="" />
+                <div class="contents">
+                  <strong data-langNum="24">활용 분야</strong><br />
+                  <h3 data-langNum="25">
+                    가축 사료, 활성탄, 천연펄프, 2차전지 음극재,<br />
+                    건축 자재, 생분해플라스틱 등
+                  </h3>
+                </div>
+                <div class="navs">
+                  <a href="#kenaf"><img src="./img/nav_enable.png" alt="" /></a>
+                  <a href="#kenaf/slide2"
+                    ><img src="./img/nav_disabled.png" alt=""
+                  /></a>
+                  <a href="#kenaf/slide3"
+                    ><img src="./img/nav_disabled.png" alt=""
+                  /></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="slide" data-anchor="slide2">
+            <div class="kenaf col-4" style="background: url('./img/05_2.png')">
+              <div class="kenaf boxs">
+                <img src="./img/icon_02.png" class="logo" alt="KENAF 2" />
+                <h1 class="title" data-langNum="26">케나프 사료 영양가치</h1>
+                <h3 class="contents" data-langNum="27">
+                  케나프 사료는 높은 조단백질 성분은 물론<br />
+                  오메가3,6,9 성분, 폴리페놀, 칼슘 등<br />
+                  각종 영양성분을 풍부하게 함유하고 있습니다.<br />
+                  케나프는 가축 기호도가 뛰어나 소는 물론 닭, 돼지, 말 등
+                  다양한<br />
+                  가축의 사료로 활용가치가 높습니다.
+                </h3>
+                <div class="navs">
+                  <a href="#kenaf"
+                    ><img src="./img/nav_disabled.png" alt=""
+                  /></a>
+                  <a href="#kenaf/slide2"
+                    ><img src="./img/nav_enable.png" alt=""
+                  /></a>
+                  <a href="#kenaf/slide3"
+                    ><img src="./img/nav_disabled.png" alt=""
+                  /></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="slide" data-anchor="slide3">
+            <div class="kenaf col-4" style="background: url('./img/05_3.png')">
+              <div class="kenaf boxs">
+                <img src="./img/icon_03.png" class="logo" alt="KENAF 3" />
+                <h1 class="title" data-langNum="28">케나프 사료의 경제성</h1>
+                <h3 class="contents" data-langNum="29">
+                  케나프는 건물수량(작물을 완전히 말린 후 무게)이 뛰어나,<br />
+                  생산량 측면에서 일반 사료작물 대비<br />
+                  월등한 수준을 자랑합니다.
+                </h3>
+                <div class="navs">
+                  <a href="#kenaf"
+                    ><img src="./img/nav_disabled.png" alt=""
+                  /></a>
+                  <a href="#kenaf/slide2"
+                    ><img src="./img/nav_disabled.png" alt=""
+                  /></a>
+                  <a href="#kenaf/slide3"
+                    ><img src="./img/nav_enable.png" alt=""
+                  /></a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -712,13 +816,14 @@
                   <input
                     type="checkbox"
                     name="agree_privacy"
-                    class="agree_privacy"
+                    id="check01"
+                    class="agree_privacy check_box"
                   />
-                  <span class="agree_text" data-langNum="31"
-                    >개인 정보 처리 방침 및 개인 정보 수집에 동의합니다.</span
+                  <label for="check01" class="agree_text" data-langNum="31"
+                    >개인 정보 처리 방침 및 개인 정보 수집에 동의합니다.</label
                   >
                   <span class="agree_bar">|</span>
-                  <span class="agree_text"
+                  <span class="contact_info agree_text"
                     ><strong data-langNum="32">전문보기</strong></span
                   >
                 </div>
@@ -747,7 +852,7 @@
         </div>
       </section>
       <footer class="footer section fp-auto-height">
-        <div class="footer_wrap">
+        <div class="footer_wrap pc">
           <div class="footer_contents">
             <h5 class="footer_title"><strong>ESG GLOBAL VINA</strong></h5>
             <div class="footer_info">
@@ -773,7 +878,91 @@
             <img src="./img/logo.png" alt="" />
           </div>
         </div>
+        <div class="footer_wrap mobile">
+          <div class="footer_mobile_top">
+            <h5 class="footer_title"><strong>ESG GLOBAL VINA</strong></h5>
+            <div class="footer_logo">
+              <img src="./img/logo.png" alt="" />
+            </div>
+          </div>
+          <div class="footer_mobile_bottom">
+            <div class="footer_contents">
+              <div class="footer_info">
+                <span>
+                  <strong
+                    >Address : ấp Thuận hòa 1, xã Thuận Lợi, <br />
+                    huyện Đồng Phú, tinh Binh phước</strong
+                  >
+                </span>
+                <br />
+                <span>
+                  <strong>E-mail : support@esgglobalvina.com</strong>
+                </span>
+              </div>
+
+              <h5 class="footer_info">
+                <strong
+                  >Copyright ⓒ 2023 ESG GLOBAL VINA. All RIGHTS RESERVED</strong
+                >
+              </h5>
+            </div>
+          </div>
+        </div>
       </footer>
+    </div>
+    <!-- contact modal -->
+    <div id="modal">
+      <div class="modal_wrap">
+        <div class="modal_head">
+          <h4><strong>개인정보취급방침</strong></h4>
+          <button type="button" class="btn_close">&times;</button>
+        </div>
+        <div class="modal_body">
+          <div class="input_wrap">
+            <div class="modal_info">
+              <p>
+                본 웹사이트 (이하 '웹사이트'라 함 )에서 운영하는 이용자의
+                개인정보를 보호하기 위하여 다음과 같이 개인정보취급방침을
+                제정하여 시행하고 있습니다.
+              </p>
+              <br />
+              <h5>■ 개인정보의 수집범위</h5>
+              <p>
+                1) 문의사항 접수를 위하여 수입하는 정보<br />
+                - 필수 정보 : 이름, 휴대전화번호, 전화번호, 이메일 주소 등
+              </p>
+              <br />
+              <h5>■ 개인정보의 수집목적 및 이용목적</h5>
+              <p>
+                웹사이트는 다음과 같은 목적을 위하여 개인정보를 수집하고
+                있습니다.
+                <br />
+                <br />
+                [비회원 개인정보 수집·이용 동의]<br />
+                - 목적 : 홈페이지 1:1문의 고객상담 등에서 문의 내용 확인,
+                요청사항 처리/상담 <br />
+                - 항목 : 회사명, 이름, 연락처, 이메일주소
+              </p>
+              <br />
+              <h5>■ 개인정보의 보유 및 이용기간</h5>
+              <p>
+                회원의 개인정보는 다음과 같이 개인정보의 수집목적 또는 제공받은
+                목적이 달성되면 파기됩니다. <br />
+                - 기간 : 문의 접수 및 상담 완료 후 6개월
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="check_wrap">
+          <!-- checkbox -->
+          <input type="checkbox" id="check02" class="check_ty01 check_box" />
+          <label for="check02"
+            >개인 정보 처리 방침 및 개인 정보 수집에 동의합니다.</label
+          >
+          <button class="btn_close">확인</button>
+        </div>
+      </div>
+      <div class="dim"></div>
     </div>
   </body>
 
@@ -784,6 +973,8 @@
         showActiveTooltip: true,
         controlArrows: true,
         navigation: true,
+        slidesNavigation: false,
+        controlArrows: false,
         anchors: [
           "main",
           "company",
@@ -793,12 +984,11 @@
           "place",
           "kenaf",
           "contact",
+          "footer",
         ],
 
         onLeave: function (index, anchors, di) {
           $("#fp-nav").hide();
-
-          console.log(di);
           if (anchors == 3 || anchors == 4 || anchors == 5) {
             $("#fp-nav").show();
           }
@@ -833,14 +1023,26 @@
     });
 
     const mySwiper = new Swiper(".swiper-container", {
-      slidesPerView: 2.28,
-      spaceBetween: 30,
+      breakpoints: {
+        300: {
+          slidesPerView: 1.15,
+          spaceBetween: 20,
+        },
+        580: {
+          slidesPerView: 2,
+          spaceBetween: 20,
+        },
+        1024: {
+          slidesPerView: 2.28,
+          spaceBetween: 30,
+        },
+      },
       on: {
         slideChange: function () {
           if ($(".swiper-slide").hasClass("swiper-slide-active") === true) {
             index = $(this)[0].realIndex;
             if (index < 4) {
-              $(".scroll").css("left", `${index * 25}%`);
+              $(".scroll").css("left", `${index * 33.333}%`);
             }
           }
         },
@@ -919,5 +1121,83 @@
         },
       });
     }
+
+    // modal
+    $(".contact_info").on("click", function () {
+      $("#modal").fadeIn(300);
+      $("body").css("overflow", "hidden");
+    });
+    $("#modal .dim, #modal .btn_close").on("click", function () {
+      $("#modal").fadeOut(300);
+      $("body").css("overflow", "visible");
+    });
+
+    //check
+    let check01 = $("#check01");
+    let check02 = $("#check02");
+    let checkInput = $(".check_box");
+
+    check01.on("click", function () {
+      if (check01.is(":checked")) {
+        checkInput.prop("checked", true);
+      } else {
+        checkInput.prop("checked", false);
+      }
+    });
+    check02.on("click", function () {
+      if (check02.is(":checked")) {
+        checkInput.prop("checked", true);
+      } else {
+        checkInput.prop("checked", false);
+      }
+    });
+
+    // 햄버거 메뉴
+    $(window).on("resize", function () {
+      if ($(this).width() > 991) {
+        $(".ham_menu").removeClass("close");
+        $(".navbar").css("display", "flex");
+      } else {
+        $(".navbar").css("display", "flex");
+      }
+    });
+    $(".ham_menu").on("click", function () {
+      $(".side_dim").show();
+      $(this).toggleClass("close");
+      if ($(this).hasClass("close")) {
+        $(this).siblings(".navbar").addClass("open");
+        $("body").css("overflow", "hidden");
+      } else {
+        sideClose();
+      }
+    });
+    $(".navbar .nav_list:lt(5)").on("click", function () {
+      if ($(".ham_menu").hasClass("close")) {
+        sideClose();
+      }
+    });
+    function sideClose() {
+      $(".navbar").removeClass("open");
+      $("body").css("overflow", "visible");
+      $(".ham_menu").removeClass("close");
+    }
+
+    // 언어 선택
+    $(".lang_btn").on("click", function () {
+      $(".dropdown")
+        .addClass("active")
+        .css({ opacity: "1", visibility: "visible" });
+    });
+
+    $(".language").on("click", function () {
+      $(".language").removeClass("active");
+      $(this).addClass("active");
+      $(".lang_btn").html(
+        $(this).text() + `<img src="./img/vector.png" alt="" />`
+      );
+      $(".dropdown")
+        .removeClass("active")
+        .css({ opacity: "0", visibility: "hidden" });
+    });
   </script>
 </html>
