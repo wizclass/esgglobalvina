@@ -824,6 +824,11 @@ strong {
   margin-bottom: 10px;
 }
 
+.footer_logo img {
+  width: 148px;
+  height: 64px;
+}
+
 /* modal */
 button.btn_close {
   background: #000;
