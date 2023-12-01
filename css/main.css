@@ -837,6 +837,10 @@ button.btn_close {
   cursor: pointer;
 }
 
+button#close_btn {
+  background: url("../img/btn_close.png")
+}
+
 #modal {
   position: fixed;
   left: 0;
@@ -1415,6 +1419,11 @@ button.btn_close {
 
   .kenaf.boxs .navs a {
     padding: 0px 10px;
+  }
+
+  .kenaf.boxs .navs a img {
+    width: 10px;
+    height: 10px;
   }
 
   /* contact */
