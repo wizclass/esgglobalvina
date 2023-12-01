@@ -195,6 +195,11 @@ strong {
   width: 100%;
 }
 
+#header #logo a img {
+  width: 123px;
+  height: 51px;
+}
+
 .navbar {
   height: 100%;
 }
@@ -1270,15 +1275,11 @@ button.btn_close {
   }
 
   .business.image {
-    flex: 35%;
-  }
-
-  .business.content {
-    flex: 65%;
+    min-height: 200px;
   }
 
   .business.inner {
-    padding: 52px 24px 0px 24px;
+    padding: 52px 24px;
     height: auto;
   }
 
@@ -1297,6 +1298,11 @@ button.btn_close {
 
   .business.middle_title .arrow_right {
     display: block !important;
+  }
+
+  .business.middle_title .arrow_right img {
+    width: 30px;
+    height: 30px;
   }
 
   .business.bottom_title {
@@ -1503,6 +1509,11 @@ button.btn_close {
 
   .footer_info {
     font-size: 11px;
+  }
+
+  .footer_logo img {
+    width: 118px;
+    height: 48px;
   }
 }
 
