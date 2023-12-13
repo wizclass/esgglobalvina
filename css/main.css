@@ -124,6 +124,7 @@ section {
 
 body {
   font-family: 'Noto Sans KR';
+  word-break: keep-all;
 }
 
 ol,
@@ -169,6 +170,7 @@ strong {
   font-family: 'Roboto-bold';
   font-weight: 600;
 }
+
 
 #header {
   position: fixed;
@@ -630,8 +632,9 @@ strong {
 .kenaf.boxs .title {
   font-size: 34px;
   font-weight: 700;
-  line-height: 30px;
   color: #fff;
+  text-align: center;
+  line-height: 48px;
 }
 
 .kenaf.boxs .contents {
@@ -1411,6 +1414,7 @@ button#close_btn {
 
   .kenaf.boxs .title {
     font-size: 24px;
+    line-height: 32px;
   }
 
   .kenaf.boxs .contents {

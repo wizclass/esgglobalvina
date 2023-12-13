@@ -16,6 +16,8 @@
 
     <!-- JS -->
     <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
     <script src="./js/jquery.fullPage.js"></script>
     <script src="./js/jquery.fullpage.extensions.min.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
@@ -26,227 +28,242 @@
       $.lang.ko = {
         0: `<strong>탄소중립 실천으로 <br /></strong>
             기후위기 극복에 앞장서는 기업`,
+        1: "Company",
         2: `ESG GLOBAL VINA는 탄소중립 선도기업 ESG GLOBAL의 베트남 현지
-  법인이며<br />
-  환경정화 식물인 ‘케나프(Kenaf)’ 농장을 대규모로 운영함으로써
-  온실가스 감축에 기여하고 있습니다.<br />`,
+      법인이며<br />
+      환경정화 식물인 ‘케나프(Kenaf)’ 농장을 대규모로 운영함으로써
+      온실가스 감축에 기여하고 있습니다.<br />`,
         3: `케나프는 각종 영양성분이 풍부한 최적의 사료작물이며,<br />
-  활성탄, 2차전지 음극재, 천연펄프, 건축 자재, 생분해플라스틱 등<br />
-  다양한 친환경 제품의 재료로 활용될 수 있습니다.`,
+      활성탄, 2차전지 음극재, 천연펄프, 건축 자재, 생분해플라스틱 등<br />
+      다양한 친환경 제품의 재료로 활용될 수 있습니다.`,
         4: `ESG GLOBAL VINA는 기후위기 극복에 실질적으로 기여하는
-  친환경기업으로 발돋움하고 있습니다.`,
+      친환경기업으로 발돋움하고 있습니다.`,
         5: "감사합니다.",
         6: "케나프 재배",
         7: `ESG GLOBAL VINA의 케나프 농장은 베트남 Binh Phuoc성에 위치하고
-  있습니다.<br />
-  해당 지역의 비옥한 토지와 아열대 기후의 조화로 연간 최대 5모작
-  생산이 가능합니다. 종자를 외부에서 조달하는 방식이 아닌,<br />
-  자체 케나프 종자 농장을 운영하여 안정적으로 케나프를
-  재배합니다.<br />
-  더불어 연도별 농장 확대 계획을 수립하여 지속적인 케나프 생산
-  규모를 확대 추진 중에 있습니다.`,
+      있습니다.<br />
+      해당 지역의 비옥한 토지와 아열대 기후의 조화로 연간 최대 5모작
+      생산이 가능합니다. 종자를 외부에서 조달하는 방식이 아닌,<br />
+      자체 케나프 종자 농장을 운영하여 안정적으로 케나프를
+      재배합니다.<br />
+      더불어 연도별 농장 확대 계획을 수립하여 지속적인 케나프 생산
+      규모를 확대 추진 중에 있습니다.`,
         8: "파종",
         9: "재배",
         10: "수확",
         11: "사료 제조",
         12: `수확한 케나프는 농장 인근의 가공 공장으로 운반, 분쇄 후 건조
-  과정을 거쳐 가축 사료용 펠릿으로 가공됩니다.<br />
-  펠릿은 다양한 가축의 기호와 영양 성분을 고려한 조단백 함량에
-  맞춰 생산됩니다.<br />
-  ESG GLOBAL VINA만의 독자적인 사료제조 기술을 바탕으로 고품질
-  케나프 사료를 생산합니다.`,
+      과정을 거쳐 가축 사료용 펠릿으로 가공됩니다.<br />
+      펠릿은 다양한 가축의 기호와 영양 성분을 고려한 조단백 함량에
+      맞춰 생산됩니다.<br />
+      ESG GLOBAL VINA만의 독자적인 사료제조 기술을 바탕으로 고품질
+      케나프 사료를 생산합니다.`,
         13: "분쇄",
         14: "건조",
         15: "펠릿",
         16: "케나프 농장",
         17: `ESG GLOBAL VINA의 케나프 농장은 베트남 Binh Phuoc성에 위치하고
-  있습니다. 베트남 특유의 비옥한 토양과 아열대 기후의 조화로 연간
-  최대 5모작이 가능한 최적의 환경입니다.<br />
-  ESG GLOBAL VINA는 종자농장을 자체 보유함으로써 우량 종자의
-  안정적 공급을 통해 뛰어난 품질의 사료 및 각종 친환경 제품의
-  원료를 생산하고 있습니다.`,
+      있습니다.<br />
+      베트남 특유의 비옥한 토양과 아열대 기후의 조화로 연간 최대
+      5모작이 가능한 최적의 환경입니다.<br />
+      ESG GLOBAL VINA는 종자농장을 자체 보유함으로써 우량 종자의
+      안정적 공급을 통해 뛰어난 품질의 사료 및 각종 친환경 제품의
+      원료를 생산하고 있습니다.`,
         18: "농장",
         19: "수확",
         20: "사업장 현황",
         21: "사료 공장",
         22: "케나프",
-        23: `재배 후 100일이 경과하면 최대 3m 이상으로 자라나는<br />
-  빠른 성장성 및 타 사료작물 대비 높은 생산성을 보유합니다.<br />
-  기후와 토양에 대한 광범위한 적응력을 지녀 척박한 환경속에서도<br />
-  발아율이 뛰어나고 , 이산화 탄소 흡수율이 일반 작물 보다 높아<br />
-  탄소저감 효과가 매우 뛰어납니다.`,
+        23: `재배 후 100일이 경과하면 최대 3m 이상으로 자라나는 빠른 성장성
+      및 타 사료작물 대비 높은 생산성을 보유합니다. 기후와 토양에 대한
+      광범위한 적응력을 지녀 척박한 환경속에서도 발아율이 뛰어나고,
+      이산화 탄소 흡수율이 일반 작물 보다 높아 탄소저감 효과가 매우
+      뛰어납니다.`,
         24: "활용 분야",
         25: `가축 사료, 활성탄, 천연펄프, 2차전지 음극재,<br />
-  건축 자재, 생분해플라스틱 등`,
+      건축 자재, 생분해플라스틱 등`,
         26: "케나프 사료 영양가치",
         27: `케나프 사료는 높은 조단백질 성분은 물론<br />
-  오메가3,6,9 성분, 폴리페놀, 칼슘 등<br />
-  각종 영양성분을 풍부하게 함유하고 있습니다.<br />
-  케나프는 가축 기호도가 뛰어나 소는 물론 닭, 돼지, 말 등
-  다양한<br />
-  가축의 사료로 활용가치가 높습니다.`,
+      오메가3,6,9 성분, 폴리페놀, 칼슘 등<br />
+      각종 영양성분을 풍부하게 함유하고 있습니다.<br />
+      케나프는 가축 기호도가 뛰어나 소는 물론 닭, 돼지, 말 등
+      다양한<br />
+      가축의 사료로 활용가치가 높습니다.`,
         28: "케나프 사료의 경제성",
-        29: `케나프는 건물수량(작물을 완전히 말린 후 무게)이 뛰어나,<br />
-  생산량 측면에서 일반 사료작물 대비<br />
-  월등한 수준을 자랑합니다.`,
+        29: `케나프는 건물수량(작물을 완전히 말린 후 무게)이 뛰어나, 생산량
+      측면에서 일반 사료작물 대비 월등한 수준을 자랑합니다.`,
         30: `문의 사항이 있으시면 내용을 입력해 주세요. 빠른 시일 내에
-  연락을 드리겠습니다.`,
+      연락을 드리겠습니다.`,
         31: "개인 정보 처리 방침 및 개인 정보 수집에 동의합니다.",
         32: "전문보기",
         33: "문의하기",
+        34: "개인정보취급방침",
+        35: `본 웹사이트 (이하 '웹사이트'라 함 )에서 운영하는 이용자의
+        개인정보를 보호하기 위하여 다음과 같이 개인정보취급방침을
+        제정하여 시행하고 있습니다.`,
+        36: "■ 개인정보의 수집범위",
+        37: `1) 문의사항 접수를 위하여 수입하는 정보<br />
+        - 필수 정보 : 이름, 휴대전화번호, 전화번호, 이메일 주소 등`,
+        38: "■ 개인정보의 수집목적 및 이용목적",
+        39: `웹사이트는 다음과 같은 목적을 위하여 개인정보를 수집하고
+        있습니다.
+        <br />
+        <br />
+        [비회원 개인정보 수집·이용 동의]<br />
+        - 목적 : 홈페이지 1:1문의 고객상담 등에서 문의 내용 확인,
+        요청사항 처리/상담 <br />
+        - 항목 : 회사명, 이름, 연락처, 이메일주소`,
+        40: "■ 개인정보의 보유 및 이용기간",
+        41: `회원의 개인정보는 다음과 같이 개인정보의 수집목적 또는 제공받은
+        목적이 달성되면 파기됩니다. <br />
+        - 기간 : 문의 접수 및 상담 완료 후 6개월`,
       };
 
       $.lang.en = {
-        0: `<strong>By practicing carbon neutrality<br /></strong>
-        A company taking the lead in overcoming the climate crisis`,
-        1: "",
-        2: `ESG GLOBAL VINA is the Vietnamese local branch of ESG GLOBAL, a leading carbon neutral company.
-  It is a corporation<br />
-  By operating a large-scale ‘Kenaf’ farm, an environmental purification plant,
-  We are contributing to reducing greenhouse gases.<br />`,
+        0: `<strong>A Company Taking the Lead in Overcoming the Climate Crisis by <br /></strong>
+        Practicing Carbon Neutrality`,
+        1: "Company",
+        2: `ESG GLOBAL VINA is the Vietnamese subsidiary of ESG GLOBAL,
+        a leading carbon-neutral company, <br />
+        and is contributing to reducing greenhouse gases by operating a large-scale ‘Kenaf’ farm,
+        an environmental purification plant.`,
         3: `Kenaf is an optimal feed crop rich in various nutrients,<br />
-  Activated carbon, secondary battery anode material, natural pulp, building materials, biodegradable plastic, etc.<br />
-  It can be used as a material for various eco-friendly products.`,
-        4: `ESG GLOBAL VINA contributes substantially to overcoming the climate crisis.
-  We are emerging as an eco-friendly company.`,
+         and can be used as a material for various eco-friendly products such as activated carbon,<br />
+         secondary battery anode material, natural pulp, building materials, and biodegradable plastic.`,
+        4: `ESG GLOBAL VINA is emerging as an eco-friendly company that substantially contributes to overcoming the climate crisis.`,
         5: "Thank You",
-        6: "Kenaf cultivation",
-        7: `ESG GLOBAL VINA's kenaf farm is located in Binh Phuoc Province, Vietnam.
-  Yes.<br />
-  Up to 5 crops per year thanks to the combination of the area's fertile land and subtropical climate.
-  Production is possible.<br /> Rather than procuring seeds from outside,<br />
-  We operate our own kenaf seed farm to produce stable kenaf.
-  Cultivated.<br />
-  In addition, we established an annual farm expansion plan to continuously produce kenaf.
-  We are in the process of expanding the scale.`,
+        6: "Kenaf Cultivation",
+        7: `ESG GLOBAL VINA's kenaf farm is located in Binh Phuoc Province, Vietnam.<br />
+        The combination of the region's fertile land and subtropical climate allows for the production of up to five crops per year.<br />
+        Rather than procuring seeds from outside, we cultivate kenaf reliably by operating our own kenaf seed farm.<br />
+        In addition, we are in the process of continuously expanding the scale of kenaf production by establishing an annual farm expansion plan.`,
         8: "Sowing",
         9: "Culture",
         10: "Harvesting",
-        11: "Feed manufacturing",
-        12: `Harvested kenaf is transported to a processing plant near the farm, crushed and dried.
-  Through this process, it is processed into pellets for livestock feed.<br />
-  Pellets have crude protein content that takes into account the tastes and nutritional components of various livestock.
-  It is produced accordingly.<br />
-  High quality based on ESG GLOBAL VINA’s unique feed manufacturing technology
-  We produce kenaf feed.`,
-        13: "Trituration",
+        11: "Feed Manufacturing",
+        12: `The harvested kenaf is transported to a processing plant near the farm, crushed, dried, and processed into pellets for livestock feed.<br />
+        Pellets are produced according to the crude protein content that takes into account the preferences and nutritional content of various livestock.<br />
+        ESG GLOBAL VINA produces high-quality kenaf feed based on its unique feed manufacturing technology.`,
+        13: "Crush",
         14: "Drying",
-        15: "Pellet",
+        15: "Pellets",
         16: "Kenaf Farm",
         17: `ESG GLOBAL VINA's kenaf farm is located in Binh Phuoc Province, Vietnam.
-  there is. Thanks to the combination of Vietnam's unique fertile soil and subtropical climate,
-  This is the optimal environment for up to 5 copies.<br />
-  ESG GLOBAL VINA produces quality seeds by owning its own seed farm.
-  Excellent quality feed and various eco-friendly products through stable supply
-  We produce raw materials.`,
+        The combination of Vietnam's unique fertile soil and subtropical climate creates an optimal environment for up to five crops per year.<br />
+        ESG GLOBAL VINA owns its own seed farm and produces excellent quality feed and raw materials for various eco-friendly products through a stable supply of high-quality seeds.`,
         18: "Farm",
         19: "Harvesting",
         20: "Business Status",
         21: "feed mill",
         22: "Kenaf",
-        23: `Grows up to 3m or more after 100 days of cultivation<br />
-  It has fast growth and high productivity compared to other feed crops.<br />
-  It has a wide range of adaptability to climate and soil, even in harsh environments<br />
-  The germination rate is excellent and the carbon dioxide absorption rate is higher than that of general crops<br />
-  The carbon reduction effect is excellent.`,
-        24: "Application field",
-        25: `Livestock feed, activated carbon, natural pulp, secondary battery anode material,<br />
-  Building materials, biodegradable plastics, etc.`,
-        26: "Kenaf feed nutritional value",
-        27: `Kenaf feed has a high crude protein content as well<br />
-  Omega 3, 6, 9 ingredients, polyphenol, calcium, etc.<br />
-  It is rich in various nutrients.<br />
-  Kenaf is highly palatable to livestock, including cattle, chickens, pigs, horses, etc.
-  Various<br />
-  It has high utility as livestock feed.`,
-        28: "Economic feasibility of kenaf feed",
-        29: `Kenaf has excellent dry matter yield (weight after the crop is completely dried),<br />
-  In terms of production, compared to general forage crops<br />
-  It boasts a superior level.`,
-        30: `If you have any questions, please enter your information. As soon as possible
-  We will contact you.`,
-        31: "I agree to the privacy policy and collection of personal information.",
-        32: "View full text",
-        33: "Contact",
+        23: `It has rapid growth, growing up to 3m or more after 100 days of cultivation, and has high productivity compared to other feed crops.<br />
+        It has a wide range of adaptability to climate and soil, so it has an excellent germination rate even in harsh environments, and its carbon dioxide absorption rate is higher than that of regular crops, so it has an excellent carbon reduction effect.`,
+        24: "Field of application",
+        25: `Livestock feed, activated carbon, natural pulp, secondary battery anode material, building materials, biodegradable plastic, etc.`,
+        26: "Kenaf Feed Nutritional Value",
+        27: `Kenaf feed is rich in various nutrients such as high crude protein content, omega 3, 6, and 9 ingredients, polyphenols, and calcium.<br />
+        Kenaf is highly palatable to livestock and has high utility as feed for various livestock, including cattle, chickens, pigs, and horses.`,
+        28: "Economic Feasibility of Kenaf Feed",
+        29: `Kenaf has excellent dry matter yield (weight after the crop is completely dried),
+        and boasts a superior level of production compared to general feed crops.`,
+        30: `If you have any questions, please enter the information. We will contact you as soon as possible.`,
+        31: "I agree with the privacy policy and the collection of personal information.",
+        32: "Details",
+        33: "Inquiring",
+        34: "Privacy Statement",
+        35: `In order to protect the personal information of users operating on this website (hereinafter referred to as ‘website’), we have established and are implementing the following personal information handling policy.`,
+        36: "■ Scope of personal information collection",
+        37: `1) Information imported to receive inquiries<br />
+        - Required information: name, mobile phone number, phone number, email address, etc.`,
+        38: "■ Purpose of collection and use of personal information",
+        39: `The website collects personal information for the following purposes.<br />
+        <br />
+        [Consent to collection and use of non-member personal information]<br />
+        - Purpose: Confirmation of inquiries and processing/counseling of requests through 1:1 customer consultation on the website <br />
+        - Items: company name, name, contact information, email address`,
+        40: "■ Retention and use period of personal information",
+        41: `A member's personal information will be destroyed once the purpose of collection or provision of personal information is achieved as follows. <br />
+        - Period: 6 months after receipt of inquiry and completion of consultation`,
       };
 
       $.lang.vi = {
-        0: `<strong>Bằng cách thực hành tính trung hòa carbon <br /><strong>
-          Một công ty đi đầu vượt qua khủng hoảng khí hậu`,
-        1: "",
-        2: `ESG GLOBAL VINA là công ty con tại Việt Nam của ESG GLOBAL, công ty trung hòa carbon hàng đầu.<br>
-            Chúng tôi đang góp phần giảm khí thải nhà kính bằng cách vận hành các trang trại quy mô lớn 'Kenaf',<br> một nhà máy lọc môi trường.`,
-        3: `Kenaf là loại cây thức ăn chăn nuôi tối ưu, giàu chất dinh dưỡng khác nhau.<br>
-            Than hoạt tính, vật liệu cực dương của pin thứ cấp, bột giấy tự nhiên,<br> vật liệu xây dựng, nhựa phân hủy sinh học, v.v.<br>
-            Nó có thể được sử dụng làm nguyên liệu cho nhiều sản phẩm thân thiện với môi trường.`,
-        4: `ESG GLOBAL VINA góp phần đáng kể vào việc vượt qua khủng hoảng khí hậu.<br>
-                    húng tôi đang nổi lên như một công ty thân thiện với môi trường.`,
+        0: `<strong>công ty đi đầu vượt qua khủng hoảng khí hậu bằng thực hành trung hòa carbon <br /><strong>`,
+        1: "Công ty",
+        2: `ESG GLOBAL VINA là công ty con tại Việt Nam của ESG GLOBAL,<br />
+        một công ty hàng đầu về trung hòa carbon và đang góp phần giảm <br />
+        khí nhà kính bằng cách vận hành trang trại 'Kenaf' quy mô lớn, một nhà máy lọc môi trường.`,
+        3: `Kenaf là loại cây thức ăn chăn nuôi tối ưu, giàu chất dinh dưỡng và có thể<br />
+        được sử dụng làm nguyên liệu cho nhiều sản phẩm thân thiện với môi trường như than hoạt tính,<br />
+        vật liệu cực dương của pin thứ cấp, bột giấy tự nhiên,<br />
+        vật liệu xây dựng và nhựa phân hủy sinh học.`,
+        4: `ESG GLOBAL VINA đang nổi lên như một công ty thân thiện với môi trường,<br />
+         góp phần đáng kể vào việc vượt qua khủng hoảng khí hậu.`,
         5: `Cám ơn`,
         6: `Trồng Kenaf`,
-        7: `Trang trại kenaf của ESG GLOBAL VINA nằm ở tỉnh Bình Phước, Việt Nam.
-                    Có.<br />
-                    Có thể trồng tới 5 vụ/năm nhờ sự kết hợp giữa đất đai màu mỡ của vùng và khí hậu cận nhiệt đới.
-                    Có thể sản xuất được.<br /> Thay vì mua hạt giống từ bên ngoài,<br />
-                    Chúng tôi vận hành trang trại hạt giống kenaf của riêng mình để sản xuất kenaf ổn định.
-                    Được trồng trọt.<br />
-                    Ngoài ra, chúng tôi đã lập kế hoạch mở rộng trang trại hàng năm để liên tục sản xuất kenaf.
-                    Chúng tôi đang trong quá trình mở rộng quy mô.`,
-        8: "gieo hạt",
-        9: "văn hoá",
-        10: "mùa gặt",
-        11: "sản xuất thức ăn chăn nuôi",
-        12: `Kenaf thu hoạch được vận chuyển đến nhà máy chế biến gần trang trại, nghiền nát và sấy khô.
-                    Thông qua quá trình này, nó được chế biến thành dạng viên làm thức ăn chăn nuôi.<br />
-                    Viên có hàm lượng protein thô phù hợp với khẩu vị và thành phần dinh dưỡng của các loại vật nuôi khác nhau.
-                    Nó được sản xuất phù hợp.<br />
-                    Chất lượng cao dựa trên công nghệ sản xuất thức ăn chăn nuôi độc đáo của ESG GLOBAL VINA
-                    Chúng tôi sản xuất thức ăn kenaf.`,
+        7: `Trang trại kenaf của ESG GLOBAL VINA nằm ở tỉnh Bình Phước, Việt Nam.<br />
+        Sự kết hợp giữa đất đai màu mỡ và khí hậu cận nhiệt đới của khu vực cho phép sản xuất tới 5 vụ mỗi năm.<br />
+        Thay vì mua hạt giống từ bên ngoài, chúng tôi trồng kenaf một cách đáng tin cậy bằng cách vận hành trang trại hạt giống kenaf của riêng mình.<br />
+        Ngoài ra, chúng tôi đang trong quá trình liên tục mở rộng quy mô sản xuất kenaf bằng cách lập kế hoạch mở rộng trang trại hàng năm.`,
+        8: "Gieo hạt",
+        9: "Văn hoá",
+        10: "thu hoạch",
+        11: "Sản xuất thức ăn chăn nuôi",
+        12: `Kenaf thu hoạch được vận chuyển đến nhà máy chế biến gần trang trại, nghiền nát, sấy khô và chế biến thành dạng viên làm thức ăn chăn nuôi.<br />
+        Viên được sản xuất theo hàm lượng protein thô có tính đến sở thích và hàm lượng dinh dưỡng của các loại vật nuôi khác nhau.<br />
+        ESG GLOBAL VINA sản xuất thức ăn kenaf chất lượng cao dựa trên công nghệ sản xuất thức ăn chăn nuôi độc đáo của mình.`,
         13: "đập vỡ",
-        14: "khô",
-        15: "viên",
-        16: "trang trại kenaf",
+        14: "Sấy khô",
+        15: "Viên nhỏ",
+        16: "Trang trại Kenaf",
         17: `Trang trại kenaf của ESG GLOBAL VINA nằm ở tỉnh Bình Phước, Việt Nam.
-                    có. Nhờ sự kết hợp giữa đất đai màu mỡ độc đáo của Việt Nam và khí hậu cận nhiệt đới,
-                    Đây là môi trường tối ưu cho tối đa 5 bản sao.<br />
-                    ESG GLOBAL VINA sản xuất hạt giống chất lượng bằng cách sở hữu trang trại hạt giống của riêng mình.
-                    Thức ăn có chất lượng tuyệt vời và nhiều sản phẩm thân thiện với môi trường nhờ nguồn cung ổn định
-                    Chúng tôi sản xuất nguyên liệu thô.`,
+        Sự kết hợp giữa đất đai màu mỡ độc đáo của Việt Nam và khí hậu cận nhiệt đới tạo ra môi trường tối ưu cho 5 vụ mùa mỗi năm.<br />
+        ESG GLOBAL VINA sở hữu trang trại giống riêng và sản xuất thức ăn và nguyên liệu thô chất lượng tuyệt vời cho nhiều sản phẩm thân thiện với môi trường thông qua nguồn cung cấp hạt giống chất lượng cao ổn định.`,
         18: "Nông trại",
         19: "thu hoạch",
         20: "Tình trạng kinh doanh",
         21: "nhà máy thức ăn chăn nuôi",
         22: "Kenaf",
-        23: `Cao tới 3m hoặc hơn sau 100 ngày trồng<br />
-                    Nó có tốc độ tăng trưởng nhanh và năng suất cao so với các loại cây thức ăn chăn nuôi khác.<br />
-                    Nó có khả năng thích ứng rộng với khí hậu và đất đai, ngay cả trong môi trường khắc nghiệt<br />
-                    Tỷ lệ nảy mầm tuyệt vời và tỷ lệ hấp thụ carbon dioxide cao hơn so với các loại cây trồng thông thường<br />
-                    Hiệu quả giảm carbon là tuyệt vời.`,
-        24: "Trường ứng dụng",
-        25: `Thức ăn chăn nuôi, than hoạt tính, bột giấy tự nhiên, vật liệu cực dương pin thứ cấp,
-      Vật liệu xây dựng, nhựa phân hủy sinh học, v.v.`,
+        23: `Nó có tốc độ tăng trưởng nhanh, cao tới 3 m hoặc hơn sau 100 ngày canh tác và có năng suất cao so với các loại cây thức ăn chăn nuôi khác.<br />
+        Nó có khả năng thích ứng rộng với khí hậu và đất đai nên có tỷ lệ nảy mầm tuyệt vời ngay cả trong môi trường khắc nghiệt, tốc độ hấp thụ carbon dioxide cao hơn so với các loại cây trồng thông thường nên có tác dụng giảm carbon tuyệt vời.`,
+        24: "Lĩnh vực ứng dụng",
+        25: `Thức ăn chăn nuôi, than hoạt tính, bột giấy tự nhiên, vật liệu cực dương pin thứ cấp, vật liệu xây dựng, nhựa phân hủy sinh học, v.v.`,
         26: `Giá trị dinh dưỡng thức ăn Kenaf`,
-        27: `Thức ăn Kenaf cũng có hàm lượng protein thô cao<br />
-        Thành phần Omega 3, 6, 9, polyphenol, canxi,.<br />
-        Nó rất giàu chất dinh dưỡng khác nhau.<br />
-        Kenaf rất ngon miệng đối với vật nuôi, bao gồm gia súc, gà, lợn, ngựa, v.v.
-        Khác nhau<br />
-        Nó có tiện ích cao như thức ăn chăn nuôi.`,
+        27: `Thức ăn Kenaf rất giàu chất dinh dưỡng khác nhau như hàm lượng protein thô cao, thành phần omega 3, 6 và 9, polyphenol và canxi.<br />
+        Kenaf rất ngon miệng đối với vật nuôi và có công dụng cao làm thức ăn cho nhiều loại vật nuôi khác nhau, bao gồm gia súc, gà, lợn và ngựa.`,
         28: `Tính khả thi về mặt kinh tế của thức ăn kenaf`,
-        29: `Kenaf có năng suất chất khô rất tốt (trọng lượng sau khi cây khô hoàn toàn),<br />
-        Về mặt sản xuất, so với các loại cây làm thức ăn gia súc thông thường<br />
-        Nó tự hào có một mức độ vượt trội.`,
-        30: `Nếu có thắc mắc vui lòng nhập thông tin của bạn. Chúng tôi sẽ liên hệ với bạn ngay khi có thể.`,
+        29: `Kenaf có năng suất chất khô tuyệt vời (trọng lượng sau khi cây khô hoàn toàn) và tự hào có mức sản lượng vượt trội so với các loại cây làm thức ăn chăn nuôi thông thường.`,
+        30: `Nếu có thắc mắc vui lòng nhập thông tin. Chúng tôi sẽ liên hệ với bạn ngay khi có thể.`,
         31: `Tôi đồng ý với chính sách bảo mật và thu thập thông tin cá nhân.`,
         32: `Xem toàn văn`,
         33: `Liên hệ chúng tôi`,
+        34: "Cam kết bảo mật",
+        35: `Để bảo vệ thông tin cá nhân của người dùng hoạt động trên trang web này (sau đây gọi là ‘trang web’), chúng tôi đã thiết lập và đang thực hiện chính sách xử lý thông tin cá nhân sau đây.`,
+        36: "■ Phạm vi thu thập thông tin cá nhân",
+        37: `1) Thông tin được nhập để nhận yêu cầu<br />
+        - Thông tin bắt buộc: tên, số điện thoại di động, số điện thoại, địa chỉ email, v.v.`,
+        38: "■ Mục đích thu thập và sử dụng thông tin cá nhân",
+        39: `Trang web thu thập thông tin cá nhân cho các mục đích sau.
+        <br />
+        <br />
+        [Đồng ý thu thập và sử dụng thông tin cá nhân của người không phải thành viên]<br />
+        - Mục đích: Xác nhận thắc mắc và xử lý/tư vấn yêu cầu thông qua tư vấn khách hàng 1:1 trên website <br />
+        - Mục: tên công ty, tên, thông tin liên lạc, địa chỉ email`,
+        40: "■ Thời gian lưu giữ và sử dụng thông tin cá nhân",
+        41: `Thông tin cá nhân của thành viên sẽ bị hủy sau khi đạt được mục đích thu thập hoặc cung cấp thông tin cá nhân như sau. <br />
+        - Thời gian: 6 tháng kể từ khi nhận được yêu cầu và hoàn thành tư vấn`,
       };
 
       function setLanguage(curLang) {
-        if (curLang !== "ko") {
-          $("#user_name").attr("placeholder", "name");
-          $("#user_phone").attr("placeholder", "phone");
+        if (curLang === "en") {
+          $("#user_name").attr("placeholder", "Name");
+          $("#user_phone").attr("placeholder", "Phone");
           $("#user_email").attr("placeholder", "E-mail");
-          $(".contact_us .contents").attr("placeholder", "contents");
+          $(".contact_us .contents").attr("placeholder", "Contents");
+        } else if (curLang === "vi") {
+          $("#user_name").attr("placeholder", "Tên");
+          $("#user_phone").attr("placeholder", "Liên hệ");
+          $("#user_email").attr("placeholder", "E-mail");
+          $(".contact_us .contents").attr("placeholder", "Nhập nội dung");
         } else {
           $("#user_name").attr("placeholder", "이름");
           $("#user_phone").attr("placeholder", "연락처");
@@ -265,6 +282,70 @@
           $(this).parent().addClass("active");
           var lang = $(this).data("lang");
           setLanguage(lang);
+        });
+      });
+
+      $(function () {
+        $(".scroll").draggable({
+          scroll: true,
+          axis: "x",
+          containment: "#scrollbar",
+          scrollSensitivity: 100,
+          scrollSpeed: 100,
+          drag: function (e) {
+            target =
+              parseInt($(".scroll").css("left")) /
+              parseInt($(".scrollbar").css("width"));
+            if (target < 0.25) {
+              $(".swiper-wrapper").css({
+                "transition-duration": "150ms",
+                transform: "translate3d(0px, 0px, 0px)",
+              });
+            }
+            if (target > 0.25 && target < 0.48) {
+              $(".swiper-wrapper").css({
+                "transition-duration": "150ms",
+                transform: `translate3d(-${
+                  parseInt($(".swiper-slide").css("width")) + 20
+                }px, 0px, 0px)`,
+              });
+            }
+            if (target > 0.48) {
+              $(".swiper-wrapper").css({
+                "transition-duration": "150ms",
+                transform: `translate3d(-${
+                  parseInt($(".swiper-slide").css("width")) * 2 + 20
+                }px, 0px, 0px)`,
+              });
+            }
+          },
+          stop: function (e) {
+            target =
+              parseInt($(".scroll").css("left")) /
+              parseInt($(".scrollbar").css("width"));
+            if (target < 0.25) {
+              $(".swiper-wrapper").css({
+                "transition-duration": "150ms",
+                transform: "translate3d(0px, 0px, 0px)",
+              });
+            }
+            if (target > 0.25 && target < 0.48) {
+              $(".swiper-wrapper").css({
+                "transition-duration": "150ms",
+                transform: `translate3d(-${
+                  parseInt($(".swiper-slide").css("width")) + 20
+                }px, 0px, 0px)`,
+              });
+            }
+            if (target > 0.48) {
+              $(".swiper-wrapper").css({
+                "transition-duration": "150ms",
+                transform: `translate3d(-${
+                  parseInt($(".swiper-slide").css("width")) * 2 + 20
+                }px, 0px, 0px)`,
+              });
+            }
+          },
         });
       });
     </script>
@@ -347,7 +428,9 @@
       <section class="section company">
         <div class="company wrap">
           <div class="company content">
-            <h1 class="company top_title play_regular">Company</h1>
+            <h1 class="company top_title play_regular" data-langNum="1">
+              Company
+            </h1>
             <h3 class="company middle_title play_bold">
               ESG GLOBAL <span style="color: #3ea053">VINA</span>
             </h3>
@@ -474,6 +557,7 @@
                 ESG GLOBAL VINA만의 독자적인 사료제조 기술을 바탕으로 고품질
                 케나프 사료를 생산합니다.
               </h5>
+
               <div class="business_swiper">
                 <div
                   class="swiper_items active"
@@ -542,9 +626,9 @@
               </h3>
               <h5 class="business bottom_title" data-langNum="17">
                 ESG GLOBAL VINA의 케나프 농장은 베트남 Binh Phuoc성에 위치하고
-                있습니다. 베트남 특유의 비옥한 토양과 아열대 기후의 조화로 연간
-                최대 5모작이 가능한<br />
-                최적의 환경입니다.<br />
+                있습니다.<br />
+                베트남 특유의 비옥한 토양과 아열대 기후의 조화로 연간 최대
+                5모작이 가능한 최적의 환경입니다.<br />
                 ESG GLOBAL VINA는 종자농장을 자체 보유함으로써 우량 종자의
                 안정적 공급을 통해 뛰어난 품질의 사료 및 각종 친환경 제품의
                 원료를 생산하고 있습니다.
@@ -573,7 +657,7 @@
                         rgba(0, 0, 0, 0) 0%,
                         rgba(0, 0, 0, 0.3) 100%
                       ),
-                      url('../img/business_img_03_2.jpg');
+                      url('../img/business_img_03_2.png');
                     background-size: cover;
                     border-radius: 5px;
                   "
@@ -588,7 +672,7 @@
                         rgba(0, 0, 0, 0) 0%,
                         rgba(0, 0, 0, 0.3) 100%
                       ),
-                      url('../img/business_img_03_3.jpg');
+                      url('../img/business_img_03_3.png');
                     background-size: cover;
                     border-radius: 5px;
                   "
@@ -627,13 +711,14 @@
                   <p><strong data-langNum="16">케나프 농장</strong></p>
                 </div>
               </div>
-              <div class="swiper-slide">
-                <!--                 <img src="./img/place_img_04_4.png" alt="케나프 농장" /> -->
-              </div>
+              <div class="swiper-slide"></div>
+
+              <!-- <div class="swiper-scrollbar"></div> -->
             </div>
-            <div class="scrollbar">
+
+            <div class="scrollbar" id="scrollbar">
               <ul>
-                <li class="scroll"></li>
+                <li class="scroll" draggable="true"></li>
               </ul>
             </div>
           </div>
@@ -646,11 +731,11 @@
               <img src="./img/icon_01.png" class="logo" alt="KENAF 1" />
               <h1 class="title" data-langNum="22">케나프</h1>
               <h3 class="contents" data-langNum="23">
-                재배 후 100일이 경과하면 최대 3m 이상으로 자라나는<br />
-                빠른 성장성 및 타 사료작물 대비 높은 생산성을 보유합니다.<br />
-                기후와 토양에 대한 광범위한 적응력을 지녀 척박한 환경속에서도<br />
-                발아율이 뛰어나고, 이산화 탄소 흡수율이 일반 작물 보다 높아<br />
-                탄소저감 효과가 매우 뛰어납니다.
+                재배 후 100일이 경과하면 최대 3m 이상으로 자라나는 빠른 성장성
+                및 타 사료작물 대비 높은 생산성을 보유합니다. 기후와 토양에 대한
+                광범위한 적응력을 지녀 척박한 환경속에서도 발아율이 뛰어나고,
+                이산화 탄소 흡수율이 일반 작물 보다 높아 탄소저감 효과가 매우
+                뛰어납니다.
               </h3>
               <img src="./img/Line 10.png" alt="" />
               <div class="contents">
@@ -695,12 +780,11 @@
                 <img src="./img/icon_01.png" class="logo" alt="KENAF 1" />
                 <h1 class="title" data-langNum="22">케나프</h1>
                 <h3 class="contents" data-langNum="23">
-                  재배 후 100일이 경과하면 최대 3m 이상으로 자라나는<br />
-                  빠른 성장성 및 타 사료작물 대비 높은 생산성을 보유합니다.<br />
-                  기후와 토양에 대한 광범위한 적응력을 지녀 척박한
-                  환경속에서도<br />
-                  발아율이 뛰어나고, 이산화 탄소 흡수율이 일반 작물 보다 높아<br />
-                  탄소저감 효과가 매우 뛰어납니다.
+                  재배 후 100일이 경과하면 최대 3m 이상으로 자라나는 빠른 성장성
+                  및 타 사료작물 대비 높은 생산성을 보유합니다. 기후와 토양에
+                  대한 광범위한 적응력을 지녀 척박한 환경속에서도 발아율이
+                  뛰어나고, 이산화 탄소 흡수율이 일반 작물 보다 높아 탄소저감
+                  효과가 매우 뛰어납니다.
                 </h3>
                 <img src="./img/Line 10.png" alt="" />
                 <div class="contents">
@@ -755,9 +839,8 @@
                 <img src="./img/icon_03.png" class="logo" alt="KENAF 3" />
                 <h1 class="title" data-langNum="28">케나프 사료의 경제성</h1>
                 <h3 class="contents" data-langNum="29">
-                  케나프는 건물수량(작물을 완전히 말린 후 무게)이 뛰어나,<br />
-                  생산량 측면에서 일반 사료작물 대비<br />
-                  월등한 수준을 자랑합니다.
+                  케나프는 건물수량(작물을 완전히 말린 후 무게)이 뛰어나, 생산량
+                  측면에서 일반 사료작물 대비 월등한 수준을 자랑합니다.
                 </h3>
                 <div class="navs">
                   <a href="#kenaf"
@@ -914,26 +997,26 @@
     <div id="modal">
       <div class="modal_wrap">
         <div class="modal_head">
-          <h4><strong>개인정보취급방침</strong></h4>
+          <h4 data-langNum="34"><strong>개인정보취급방침</strong></h4>
           <button type="button" class="btn_close" id="close_btn"></button>
         </div>
         <div class="modal_body">
           <div class="input_wrap">
             <div class="modal_info">
-              <p>
+              <p data-langNum="35">
                 본 웹사이트 (이하 '웹사이트'라 함 )에서 운영하는 이용자의
                 개인정보를 보호하기 위하여 다음과 같이 개인정보취급방침을
                 제정하여 시행하고 있습니다.
               </p>
               <br />
-              <h5>■ 개인정보의 수집범위</h5>
-              <p>
+              <h5 data-langNum="36">■ 개인정보의 수집범위</h5>
+              <p data-langNum="37">
                 1) 문의사항 접수를 위하여 수입하는 정보<br />
                 - 필수 정보 : 이름, 휴대전화번호, 전화번호, 이메일 주소 등
               </p>
               <br />
-              <h5>■ 개인정보의 수집목적 및 이용목적</h5>
-              <p>
+              <h5 data-langNum="38">■ 개인정보의 수집목적 및 이용목적</h5>
+              <p data-langNum="39">
                 웹사이트는 다음과 같은 목적을 위하여 개인정보를 수집하고
                 있습니다.
                 <br />
@@ -944,8 +1027,8 @@
                 - 항목 : 회사명, 이름, 연락처, 이메일주소
               </p>
               <br />
-              <h5>■ 개인정보의 보유 및 이용기간</h5>
-              <p>
+              <h5 data-langNum="40">■ 개인정보의 보유 및 이용기간</h5>
+              <p data-langNum="41">
                 회원의 개인정보는 다음과 같이 개인정보의 수집목적 또는 제공받은
                 목적이 달성되면 파기됩니다. <br />
                 - 기간 : 문의 접수 및 상담 완료 후 6개월
@@ -956,10 +1039,10 @@
         <div class="check_wrap">
           <!-- checkbox -->
           <input type="checkbox" id="check02" class="check_ty01 check_box" />
-          <label for="check02"
+          <label for="check02" data-langNum="31"
             >개인 정보 처리 방침 및 개인 정보 수집에 동의합니다.</label
           >
-          <button class="btn_close">확인</button>
+          <button class="btn_close" data-langNum="33">확인</button>
         </div>
       </div>
       <div class="dim"></div>
